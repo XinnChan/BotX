@@ -100,11 +100,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
         }
 	
 	const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J6lLrmwtdxA9wsx7FBMAzF"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "http://chat.whatsapp.com/LojZCGWIuMsHvLx6Vf89BI"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J6lLrmwtdxA9wsx7FBMAzF"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "http://chat.whatsapp.com/LojZCGWIuMsHvLx6Vf89BI"}}}, { quoted: m})
         }
 
 //bug nya
