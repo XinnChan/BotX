@@ -21,9 +21,9 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['+16084013060']
-global.premium = ['+16084013060']
-global.ownernomer = '+16084013060'
+global.owner = ['16084013060']
+global.premium = ['16084013060']
+global.ownernomer = '16084013060'
 global.ownername = 'Xin'
 global.botname = 'Xin'
 global.footer = '© Xin'
@@ -38,10 +38,10 @@ global.userjson = `https://xinnchan.github.io/alldata.json`
 
 
 global.bot1 = '6285756244558'
-global.bot2 = '+16084013060'
-global.bot3 = '+16084013060'
-global.bot4 = '+16084013060'
-global.bot5 = '+16084013060'
+global.bot2 = '16084013060'
+global.bot3 = '16084013060'
+global.bot4 = '16084013060'
+global.bot5 = '16084013060'
 
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
