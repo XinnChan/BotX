@@ -123,7 +123,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 	
 
         //Public & Self\\
-        if (!XeonBotInc.self) {
+        if (!XeonBotInc.public) {
             if (!m.key.fromMe) return
         }
 
