@@ -279,6 +279,38 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             }
             break
+
+case 'xin':
+					let contentd1 = fs.readFileSync('./BotMedia/menu2.mp4')
+					let mdia1 = await XeonBotInc.prepareMessageMedia(contentd1,MessageType.image, {thumbnail: fs.readFileSync('./BotMedia/menu2.mp4')})
+					let taip1 = 4;
+					let buttons1 = [
+          {
+            buttonId: 'Jangan Di Klik',            buttonText: {
+              displayText: `wa.me/+16084013060\nAku save ya :v\n ẉ.ceo/•㆒᮫ᨗ᪼࿊⃟𝑿𝒆𝒏𝒏シ︎⁩◥▶‿◀◤`,
+            },
+            type: 1,
+          },];
+					let buttonMessageh1 = {
+						contentText: '',
+						footerText:© Xin, 
+						buttons: buttons1,
+						headerType: 4,
+						...mdia1
+					}
+					XeonBotInc.sendMessage(from, buttonMessageh1, MessageType.buttonsMessage,{contextInfo :{text: '🔥',
+            "forwardingScore": 1000000000,
+            isForwarded: false,
+            sendEphemeral: false,
+            "externalAdReply": {
+                "title": `Hii Nama Saya ${pushname} | KLIK DI SINI UNTUK CHAT LANGSUNG KE CREATOR BOTZ`,
+                "body": "",
+                "previewType": "LOCATION",
+                "thumbnailUrl": "https://i.ibb.co/3hrZZ6s/tsukasa.png",
+                "thumbnail": fs.readFileSync(`./BotMedia/menu2.mp4`),
+                "sourceUrl": "https://wa.me/+16084013060?text=Assalamualaikum Kenji"
+ }},quoted:fvn})
+					break
 	
 	case 'command2': case 'listmenu': case 'menulist': case 'menu': case 'help': case '?': case 'start': case 'bot': case 'robot': case 'beranda': case 'gas': case '?':{
 	
@@ -301,10 +333,10 @@ if (!subscribe) {
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
 │ 「 LANGGANAN INFO 」
-│✙ 𝗡𝗢𝗠𝗢𝗥 : ${nomor}
-│✙ 𝗣𝗔𝗞𝗘𝗧 : ${paket}
-│✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : ${awal}
-│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : ${akhir}
+│✙ 𝗡𝗮𝗺𝗲 : ${pushname}
+│✙ 𝗣𝗔𝗞𝗘𝗧 : Member
+│✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : Ketik Owner untuk menyewa
+│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : Ketik Owner untuk menyewa
 └┬──────────┈ ⳹
     │✑ ${prefix}santed [nomor]
     │✑ ${prefix}serang [nomor]
