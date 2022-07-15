@@ -487,7 +487,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'owner':
-return XeonBotInc.sendButMessage(from, a, b, ton,{quoted : freply})
+XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 
 vcard3 = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
