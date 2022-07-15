@@ -557,7 +557,7 @@ don = fs.readFileSync('./BotMedia/menu2.mp4')
 reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+16084013060`)
          break
-         'listbotatk': {
+         case 'listbotatk': {
         	reply (`alldata = await fetchJson(global.userjson)
 const nomore2 = m.sender.replace(/[^0-9]/g, '')
 subscribe = alldata.datanomor.includes(nomore2)
