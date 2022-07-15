@@ -486,9 +486,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             }
             break
-            case 'owner':
+            /*case 'owner':
 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-
+return
 vcard3 = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
             'N:Sy;Bot;;;\n' +
@@ -505,7 +505,7 @@ vcard3 = 'BEGIN:VCARD\n' +
             `item5.X-ABLabel:⚔️ XinnChan Owner\n` +
             'END:VCARD'.trim()
 XeonBotInc.sendMessage(from, {displayName: `Kenji©️`, vcard: vcard3}, contact,) 
-     break
+     break*/
             case 'aboutbot': case 'aboutthisbot': case 'tentangbot': case 'bot': case 'robot': case 'botsanted': {
 	don = fs.readFileSync('./BotMedia/zarin.jpg')
 let buttons = [
@@ -541,10 +541,21 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
-          case 'owner': case 'developer': case 'pemilik': {
-          m.reply (`Ini adalah nomor WhatsApp Owner BOT Dark Zarin
-https://wa.me/+16084013060`)
-          }
+          case 'owner': case 'developer': case 'pemilik':
+don = fs.readFileSync('./BotMedia/zarin.jpg')
+let buttons = [
+                    {buttonId: `${prefix}owner`, buttonText: {displayText: '👤OWNER BOT👤'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: don,
+                    caption:`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
+https://wa.me/+16084013060`,
+                    footer:  global.footer,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+       }
          break
         case 'listbotatk': {
         	alldata = await fetchJson(global.userjson)
