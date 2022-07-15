@@ -367,7 +367,7 @@ if (!subscribe) {
 										"rowId": `${prefix}dahlah`
 									},
 									{
-										"title": "pushname",
+										"title": "Jangan di pencet🗿",
 										
 										"rowId": `${prefix}pushname`
 									}
@@ -387,7 +387,28 @@ let dataanu = await fetchJson(`https://dark-zarin.github.io/${nomore2}.json`)
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: ``,
-                    description: ``,
+                    description: `┌─❖
+│「 Hi 👋 」
+└┬❖ 「 ${pushname} 」
+┌┤✑  How Are You? 😄
+│└───────────┈ ⳹
+│ 「 BOT INFO 」
+│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│✙ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 : ONLINE | LANCAR
+│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : Xin ©️
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : wa.me/+16084013060
+│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${alldata.totaldata}
+└┬──────────┈ ⳹
+    │✑ Please Choose The Menu
+    └───────────┈ ⳹
+_🌐GRUB TOTAL : ${groups.length}_
+_🎲PRIBADI CHAT : ${privat.length}_
+_🎭BATERAI : ${baterai}% ${charger}_
+_🌠TOTAL CHAT : ${totalChat.length}_
+_🏳‍🌈KECEPATAN : ${latensie.toFixed(4)} Detik_
+_𓃲RUNTIME : ${runtime(process.uptime())}_
+_🏴‍☠️PLATFORM : ${os.platform()}_`,
                     buttonText: "Menu",
                     footerText: `${global.footer}\n${tanggal}`,
                     listType: "SINGLE_SELECT",
@@ -440,7 +461,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}dahlah`
 									},
 									{
-										"title": "pushname",
+										"title": "Jangan di pencet🗿",
 										
 										"rowId": `${prefix}pushname`
 									}
