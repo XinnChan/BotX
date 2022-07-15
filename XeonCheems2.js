@@ -571,9 +571,7 @@ if (!subscribe) {
                      XeonBotInc.sendButtonText(m.chat, buttons, `Maaf Anda belum bisa mengakses fitur ini\n Anda harus berlangganan Sewa BOT agar dapat menggunakan Fitur ini`, `Ketik ${prefix}sewa\n untuk melihat harga sewa BOT, \nketik ${prefix}owner\nuntuk melihat nomor owner`, m)
 	} else {
 		kibot = await fetchJson(`https://xinnchan.github.io/databot.json`)
-	reply(`for (let mem of groupMembers) {
-						teks += ` 
-					    @${mem.jid.split('@')[0]}`)
+	reply(`Semua member yang ada di grup ini ga ada akhlak, apa lu liat liat mau di colok ha?🗿🗿🗿`)
 		
 		
 		}
