@@ -491,7 +491,7 @@ let buttons = [
           break
           case 'owner': case 'developer': case 'pemilik':
           
-don = fs.readFileSync('./BotMedia/menu2.mp4')
+don = fs.readFileSync('./BotMedia/sewa.jpg')
 
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+16084013060`)
