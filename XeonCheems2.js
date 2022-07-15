@@ -410,9 +410,8 @@ _🌐GRUB TOTAL : 4
 _📌PIN CHAT : 2
 -Xinyan
 -Minyan_
-_🎭BATERAI : ${baterai}% ${charger}_
+_🔋BATERAI : Tidak di Carge_
 _🌠TOTAL CHAT :[ 2 ]_
-_🏳‍🌈KECEPATAN : ${latensie.toFixed(4)} Detik_
 _𓃲RUNTIME : ${runtime(process.uptime())}_
 _🏴‍☠️PLATFORM : ${os.platform()}_`,
                     buttonText: "Menu",
