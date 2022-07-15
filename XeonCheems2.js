@@ -123,7 +123,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 	
 
         //Public & Self\\
-        if (!XeonBotInc.public) {
+        if (!XeonBotInc.self) {
             if (!m.key.fromMe) return
         }
 
@@ -280,7 +280,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 	
-	case 'command': case 'listmenu': case 'menulist': case 'menu': case 'help': case '?': case 'start': case 'bot': case 'robot': case 'beranda': case 'gas': case '?':{
+	case 'command2': case 'listmenu': case 'menulist': case 'menu': case 'help': case '?': case 'start': case 'bot': case 'robot': case 'beranda': case 'gas': case '?':{
 	
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
 	timestampe = speed();
@@ -348,9 +348,9 @@ if (!subscribe) {
 										"rowId": `${prefix}aboutdev`
 									},
 									{
-										"title": "Id",
+										"title": "Kembali ke menu",
 										
-										"rowId": `$ m.chat`
+										"rowId": `${prefix}command2`
 									}
 								]
 							}
@@ -441,9 +441,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}aboutdev`
 									},
 									{
-										"title": "Uptime",
+										"title": "Kembali ke menu",
 										
-										"rowId": `$ uptime -p`
+										"rowId": `${prefix}bot`
 									}
 								]
 							}
@@ -492,7 +492,7 @@ let buttons = [
           break
           case 'owner': case 'developer': case 'pemilik': {
           m.reply (`Ini adalah nomor WhatsApp Owner BOT Dark Zarin
-https://wa.me/6282143067466`)
+https://wa.me/+16084013060`)
           }
          break
         case 'listbotatk': {
