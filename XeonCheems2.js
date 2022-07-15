@@ -227,7 +227,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `Pilih Durasi Penyerangan\n`,
-                    buttonText: "CLICK ME",
+                    buttonText: "Waktu Crash",
                     footerText: `${global.footer}\n${tanggal}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
@@ -291,7 +291,7 @@ const nomore2 = m.sender.replace(/[^0-9]/g, '')
 
 subscribe = alldata.datanomor.includes(nomore2)
 
-
+don = fs.readFileSync('./BotMedia/zarin.jpg')
 if (!subscribe) {
 	let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
