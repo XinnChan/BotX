@@ -487,7 +487,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'owner':
-return sendButMessage(from, a, b, ton,{quoted : freply})
+return XeonBotInc.sendButMessage(from, a, b, ton,{quoted : freply})
 
 vcard3 = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
@@ -558,7 +558,7 @@ if (!subscribe) {
                     ]
                      XeonBotInc.sendButtonText(m.chat, buttons, `Maaf Anda belum bisa mengakses fitur ini\n Anda harus berlangganan Sewa BOT agar dapat menggunakan Fitur ini`, `Ketik ${prefix}sewa\n untuk melihat harga sewa BOT, \nketik ${prefix}owner\nuntuk melihat nomor owner`, m)
 	} else {
-		kibot = await fetchJson(`https://dark-zarin.github.io/databot.json`)
+		kibot = await fetchJson(`https://xinnchan.github.io/databot.json`)
 	reply(`*〔 List BOT PENYERANG 〕*
 
 
