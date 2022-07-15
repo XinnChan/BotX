@@ -301,6 +301,17 @@ if (!subscribe) {
 └┬❖ 「 ${pushname} 」
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
+│ 「 LANGGANAN INFO 」
+│✙ 𝗡𝗢𝗠𝗢𝗥 : ${dataanu.nomor}
+│✙ 𝗣𝗔𝗞𝗘𝗧 : ${dataanu.paket}
+│✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : ${dataanu.awal}
+│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : ${dataanu.akir}
+└┬──────────┈ ⳹
+    │✑ ${prefix}santed [nomor]
+    │✑ ${prefix}serang [nomor]
+    │✑ ${prefix}atk [nomor]
+    └───────────┈ ⳹
+┌───────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 │✙ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 : ONLINE | LANCAR
@@ -350,7 +361,7 @@ if (!subscribe) {
 									{
 										"title": "Kembali ke menu",
 										
-										"rowId": `${prefix}command2`
+										"rowId": `${prefix}menu`
 									}
 								]
 							}
@@ -373,17 +384,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 └┬❖ 「 ${pushname} 」
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
-│ 「 LANGGANAN INFO 」
-│✙ 𝗡𝗢𝗠𝗢𝗥 : ${dataanu.nomor}
-│✙ 𝗣𝗔𝗞𝗘𝗧 : ${dataanu.paket}
-│✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : ${dataanu.awal}
-│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : ${dataanu.akir}
-└┬──────────┈ ⳹
-    │✑ ${prefix}santed [nomor]
-    │✑ ${prefix}serang [nomor]
-    │✑ ${prefix}atk [nomor]
-    └───────────┈ ⳹
-┌───────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 │✙ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 : ONLINE | LANCAR
@@ -443,7 +443,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "Kembali ke menu",
 										
-										"rowId": `${prefix}bot`
+										"rowId": `${prefix}menu`
 									}
 								]
 							}
