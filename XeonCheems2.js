@@ -570,6 +570,7 @@ let buttons = [
                 }
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
+break
        case 'dahlah':
        don = fs.readFileSync('./BotMedia/dev.jpg')
 let buttons = [
