@@ -486,6 +486,26 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             }
             break
+            case 'owner':
+if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply}) 
+ 
+vcard3 = 'BEGIN:VCARD\n' +
+            'VERSION:3.0\n' +
+            'N:Sy;Bot;;;\n' +
+            `FN: ${control.NamaOwner}\n` +
+            `item1.TEL;waid=${+16084013060}:${+16084013060}\n` +
+            `item1.X-ABLabel:👑 Creator\n` +
+            `item2.EMAIL;type=INTERNET:xenji795@gmail.com\n` +
+            `item2.X-ABLabel:📧 Email\n` +
+            `item3.URL:https://youtube.com/c/XinnChan \n` +
+            `item3.X-ABLabel:⚙️ Channel Owner\n` +
+            `item4.ADR:;;🇮🇩 Indonesia;;;;\n` +
+            `item4.X-ABADR:ac\n` +
+            `item4.X-ABLabel:🌍 Region\n` +
+            `item5.X-ABLabel:⚔️ XinnChan Owner\n` +
+            'END:VCARD'.trim()
+XeonBotInc.sendMessage(from, {displayName: `Kenji©️`, vcard: vcard3}, contact,) 
+     break
             case 'aboutbot': case 'aboutthisbot': case 'tentangbot': case 'bot': case 'robot': case 'botsanted': {
 	don = fs.readFileSync('./BotMedia/zarin.jpg')
 let buttons = [
