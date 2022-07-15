@@ -402,10 +402,16 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 └┬──────────┈ ⳹
     │✑ Please Choose The Menu
     └───────────┈ ⳹
-_🌐GRUB TOTAL : ${groups.length}_
-_🎲PRIBADI CHAT : ${privat.length}_
+_🌐GRUB TOTAL : 4
+-Comunity Clay(Clowns laught At You
+-Group WhatsApp Offc
+-Bot WhatsApp Offc
+-Private Team WhatsApp Moders TWM_
+_📌PIN CHAT : 2
+-Xinyan
+-Minyan_
 _🎭BATERAI : ${baterai}% ${charger}_
-_🌠TOTAL CHAT : ${totalChat.length}_
+_🌠TOTAL CHAT :[ 2 ]_
 _🏳‍🌈KECEPATAN : ${latensie.toFixed(4)} Detik_
 _𓃲RUNTIME : ${runtime(process.uptime())}_
 _🏴‍☠️PLATFORM : ${os.platform()}_`,
