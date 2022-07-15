@@ -487,8 +487,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'owner':
-if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply}) 
- 
 vcard3 = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
             'N:Sy;Bot;;;\n' +
