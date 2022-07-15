@@ -558,11 +558,11 @@ reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owne
 https://wa.me/+16084013060`)
          break
         case 'listbotatk': {
-        	alldata = await fetchJson(global.userjson)
+        	reply (`/*alldata = await fetchJson(global.userjson)
 const nomore2 = m.sender.replace(/[^0-9]/g, '')
 subscribe = alldata.datanomor.includes(nomore2)
 
-if (!subscribe) {
+if (!subscribe) {*/
 	let buttons = [
                         { buttonId: '#sewa', buttonText: { displayText: 'SEWA BOT' }, type: 1 },
                         { buttonId: '#owner', buttonText: { displayText: 'CONTACT OWNER' }, type: 1 }
@@ -570,16 +570,16 @@ if (!subscribe) {
                      XeonBotInc.sendButtonText(m.chat, buttons, `Maaf Anda belum bisa mengakses fitur ini\n Anda harus berlangganan Sewa BOT agar dapat menggunakan Fitur ini`, `Ketik ${prefix}sewa\n untuk melihat harga sewa BOT, \nketik ${prefix}owner\nuntuk melihat nomor owner`, m)
 	} else {
 		kibot = await fetchJson(`https://xinnchan.github.io/databot.json`)
-	reply(`*〔 List BOT PENYERANG 〕*
+	reply*/(`*〔 List BOT PENYERANG 〕*
 
-TERSANGKA❗❗❗${pushname} KAMU ADALAH PENYERANG NOMOR ORANG YANG TIDAK BERSALAH❗
+TERSANGKA❗❗❗ ${pushname} KAMU ADALAH PENYERANG NOMOR ORANG YANG TIDAK BERSALAH❗
 
-*Dilarang menyebarkan nomor BOT PENYERANG Pada Siapapun ❗*`)
+*Jika anda menggunakan fitur santed dengan sembarangan nomor anda akan di banned bahkan user akan di jebloskan ke penjara jika korban melaporkannya❗*`)/*
 		
 		
 		}
         
-        }
+        }*/
         break
          case 'tutorial':
          reply(`──❲ *Tutorial Penggunaan Perintah BOT Dark Zarin* ❳──
