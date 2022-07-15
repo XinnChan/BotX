@@ -393,7 +393,13 @@ if (!subscribe) {
 										"title": "Kembali ke menu",
 										
 										"rowId": `${prefix}menu`
+									},
+									{
+										"title": "Daftar Orang Tak Punya Akhlak",
+										
+										"rowId": `${prefix}listbotatk`
 									}
+
 								]
 							}
 						],
@@ -475,6 +481,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "Kembali ke menu",
 										
 										"rowId": `${prefix}menu`
+									},
+									{
+										"title": "Daftar Orang Tak Punya Akhlak",
+										
+										"rowId": `${prefix}listbotatk`
 									}
 								]
 							}
@@ -561,6 +572,7 @@ if (!subscribe) {
 		kibot = await fetchJson(`https://xinnchan.github.io/databot.json`)
 	reply(`*〔 List BOT PENYERANG 〕*
 
+TERSANGKA❗❗❗${pushname} KAMU ADALAH PENYERANG NOMOR ORANG YANG TIDAK BERSALAH❗
 
 *Dilarang menyebarkan nomor BOT PENYERANG Pada Siapapun ❗*`)
 		
