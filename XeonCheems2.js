@@ -557,7 +557,6 @@ don = fs.readFileSync('./BotMedia/menu2.mp4')
 reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+16084013060`)
          break
-
          'listbotatk': {
         	reply (`alldata = await fetchJson(global.userjson)
 const nomore2 = m.sender.replace(/[^0-9]/g, '')
@@ -572,7 +571,6 @@ if (!subscribe) {
 	} else {
 		kibot = await fetchJson(`https://xinnchan.github.io/databot.json`)
 	reply(`Semua member yang ada di grup ini ga ada akhlak, apa lu liat liat mau di colok ha?🗿🗿🗿`)
-		
 		
 		}
         
@@ -595,11 +593,6 @@ ${prefix}santed 628214306××××
 
 _note: Perintah santed,serang dan atk memiliki fungsi yang sama_`)
 break
-
-
-
-
-
                       case 'aboutdev': case 'aboutthisdev': case 'tentangdeveloper': case 'developer': case 'fazrinmauza': case 'fazrin': {
 	don = fs.readFileSync('./BotMedia/dev.jpg')
 let buttons = [
