@@ -571,7 +571,7 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
 break
-       case 'dahlah':
+       /*case 'dahlah':
        don = fs.readFileSync('./BotMedia/dev.jpg')
 let buttons = [
                     {buttonId: `${prefix}dahlah`, buttonText: {displayText: 'Jangan di pencet🗿'}, type: 1}
@@ -585,7 +585,7 @@ let buttons = [
                 }
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
- break
+ break*/
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot': 
           reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
