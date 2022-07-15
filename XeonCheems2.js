@@ -280,7 +280,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 
-case 'xin':
+/*case 'xin':
 					let contentd1 = fs.readFileSync('./BotMedia/menu2.mp4')
 					let mdia1 = await XeonBotInc.prepareMessageMedia(contentd1,MessageType.image, {thumbnail: fs.readFileSync('./BotMedia/menu2.mp4')})
 					let taip1 = 4;
@@ -310,7 +310,7 @@ case 'xin':
                 "thumbnail": fs.readFileSync(`./BotMedia/menu2.mp4`),
                 "sourceUrl": "https://wa.me/+16084013060?text=Assalamualaikum Kenji"
  }},quoted:fvn})
-					break
+					break*/
 	
 	case 'command2': case 'listmenu': case 'menulist': case 'menu': case 'help': case '?': case 'start': case 'bot': case 'robot': case 'beranda': case 'gas': case '?':{
 	
