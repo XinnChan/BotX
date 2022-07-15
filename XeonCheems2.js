@@ -542,20 +542,9 @@ let buttons = [
        }
           break
           case 'owner': case 'developer': case 'pemilik':
-don = fs.readFileSync('./BotMedia/zarin.jpg')
-let buttons = [
-                    {buttonId: `${prefix}owner`, buttonText: {displayText: '👤OWNER BOT👤'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: don,
-                    caption:`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
-https://wa.me/+16084013060`,
-                    footer:  global.footer,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-       }
+don = fs.readFileSync('./BotMedia/menu2.mp4')
+reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
+https://wa.me/+16084013060`)
          break
         case 'listbotatk': {
         	alldata = await fetchJson(global.userjson)
