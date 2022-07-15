@@ -291,7 +291,6 @@ const nomore2 = m.sender.replace(/[^0-9]/g, '')
 
 subscribe = alldata.datanomor.includes(nomore2)
 
-don = fs.readFileSync('./BotMedia/zarin.jpg')
 if (!subscribe) {
 	let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
@@ -305,7 +304,7 @@ if (!subscribe) {
 │✙ 𝗡𝗢𝗠𝗢𝗥 : ${dataanu.nomor}
 │✙ 𝗣𝗔𝗞𝗘𝗧 : ${dataanu.paket}
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : ${dataanu.awal}
-│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : ${dataanu.akir}
+│✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : ${dataanu.akhir}
 └┬──────────┈ ⳹
     │✑ ${prefix}santed [nomor]
     │✑ ${prefix}serang [nomor]
