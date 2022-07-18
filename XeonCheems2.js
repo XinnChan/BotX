@@ -311,9 +311,9 @@ if (!subscribe) {
     │✑ ${prefix}serang ${pushname}
     │✑ ${prefix}atk ${pushname}
     └───────────┈ ⳹
-   ##########${pushname}############
+   ########## ${pushname} ############
     *Free Atack 1x bebas nomor 1 menit*
-   ##########${pushname}############
+   ########## ${pushname} ############
 ┌───────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -403,10 +403,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
     │✑ Please Choose The Menu
     └───────────┈ ⳹
 _🌐GRUB TOTAL : 4
--Comunity Clay(Clowns laught At You
+-Comunity Clay(Clowns laught At You)
 -Group WhatsApp Offc
 -Bot WhatsApp Offc
--Private Team WhatsApp Moders TWM_
+-Private Team WhatsApp Moders TXS_
 _📌PIN CHAT : 2
 -Xinyan
 -Minyan_
