@@ -311,9 +311,9 @@ if (!subscribe) {
     │✑ ${prefix}serang ${pushname}
     │✑ ${prefix}atk ${pushname}
     └───────────┈ ⳹
-   ########## ${pushname} ############
+    ${pushname} 
     *Free Atack 1x bebas nomor 1 menit*
-   ########## ${pushname} ############
+    ${pushname} 
 ┌───────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -397,7 +397,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 │✙ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 : ONLINE | LANCAR
 │✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 │✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : Xin ©️
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : wa.me/+16084013060
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : wa.me/+6282143067466
 │✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${alldata.totaldata}
 └┬──────────┈ ⳹
     │✑ Please Choose The Menu
@@ -520,7 +520,7 @@ let buttons = [
 don = fs.readFileSync('./BotMedia/sewa.jpg')
 
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
-https://wa.me/+16084013060`)
+https://wa.me/+6282143067466`)
          break
         case 'listbotatk': {
         	alldata = await fetchJson(global.userjson)
@@ -636,7 +636,7 @@ let buttons = [
 ⬣ BOT on 24 JAM ⏱️
 ⬣ Menjalankan Perintah No DELAY 🚀
 
-𝗢𝗥𝗗𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚 𝗛𝗨𝗕𝗨𝗡𝗚𝗜 𝗢𝗪𝗡𝗘𝗥 𝗕𝗢𝗧 https://wa.me/+16084013060?text=Mau+sewa+BOT+SANTED+kak
+𝗢𝗥𝗗𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚 𝗛𝗨𝗕𝗨𝗡𝗚𝗜 𝗢𝗪𝗡𝗘𝗥 𝗕𝗢𝗧 https://wa.me/+6282143067466?text=Mau+sewa+BOT+SANTED+kak
 `)
 break
 
