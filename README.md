@@ -65,6 +65,12 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 heroku/nodejs
 ```
+<!-- Start via Heroku -->
+<b><details><summary>Start via Heroku</summary></b>
+
+* Scan QR In Your Whatsapp From [Here](https://replit.com/@nexusNw/M-D-SCANNER-V2?v=1?outputonly=1&lite=1#index.js)
+
+</details>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XinnChan/BotX)
 
