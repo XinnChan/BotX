@@ -302,14 +302,14 @@ if (!subscribe) {
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
 │ 「 LANGGANAN INFO 」
-│✙ 𝗡𝗢𝗠𝗢𝗥 : ${sender.split}
+│✙ 𝗡𝗢𝗠𝗢𝗥 : sender.replace(/[^0-9.]/g, '')
 │✙ 𝗣𝗔𝗞𝗘𝗧 : Gak ada!, mau atack nomor? sewa lah🗿
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : Tergantung Owner
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : Tergantung Owner
 └┬──────────┈ ⳹
-    │✑ ${prefix}santed ${sender.split}
-    │✑ ${prefix}serang ${sender.split}
-    │✑ ${prefix}atk ${sender.split}
+    │✑ ${prefix}santed +62xxxxxxxxxxx
+    │✑ ${prefix}serang +62xxxxxxxxxxx
+    │✑ ${prefix}atk +62xxxxxxxxxxx
     └───────────┈ ⳹
     
     *Free Atack 1x bebas nomor 1 menit*
