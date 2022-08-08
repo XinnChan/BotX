@@ -302,7 +302,7 @@ if (!subscribe) {
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
 │ 「 LANGGANAN INFO 」
-│✙ 𝗡𝗢𝗠𝗢𝗥 : sender.replace(/[^0-9.]/g, '')
+│✙ 𝗡𝗢𝗠𝗢𝗥 : ${sender.replace(/[^0-9.]/g, '')}
 │✙ 𝗣𝗔𝗞𝗘𝗧 : Gak ada!, mau atack nomor? sewa lah🗿
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : Tergantung Owner
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : Tergantung Owner
