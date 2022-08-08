@@ -100,11 +100,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
         }
 	
 	const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "http://chat.whatsapp.com/LojZCGWIuMsHvLx6Vf89BI"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "http://chat.whatsapp.com/LojZCGWIuMsHvLx6Vf89BI"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
         }
 
 //bug nya
@@ -302,18 +302,18 @@ if (!subscribe) {
 ┌┤✑  How Are You? 😄
 │└───────────┈ ⳹
 │ 「 LANGGANAN INFO 」
-│✙ 𝗡𝗢𝗠𝗢𝗥 : ${pushname}
+│✙ 𝗡𝗢𝗠𝗢𝗥 : ${sender.split("@")[0]}
 │✙ 𝗣𝗔𝗞𝗘𝗧 : Gak ada!, mau atack nomor? sewa lah🗿
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : Tergantung Owner
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : Tergantung Owner
 └┬──────────┈ ⳹
-    │✑ ${prefix}santed ${pushname}
-    │✑ ${prefix}serang ${pushname}
-    │✑ ${prefix}atk ${pushname}
+    │✑ ${prefix}santed ${sender.split("@")[0]}
+    │✑ ${prefix}serang ${sender.split("@")[0]}
+    │✑ ${prefix}atk ${sender.split("@")[0]}
     └───────────┈ ⳹
-    ${pushname} 
+    
     *Free Atack 1x bebas nomor 1 menit*
-    ${pushname} 
+    
 ┌───────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
