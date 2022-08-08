@@ -307,9 +307,9 @@ if (!subscribe) {
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗠𝗨𝗟𝗔𝗜 : Tergantung Owner
 │✙ 𝗪𝗔𝗞𝗧𝗨 𝗕𝗘𝗥𝗔𝗞𝗛𝗜𝗥 : Tergantung Owner
 └┬──────────┈ ⳹
-    │✑ ${prefix}santed +62xxxxxxxxxxx
-    │✑ ${prefix}serang +62xxxxxxxxxxx
-    │✑ ${prefix}atk +62xxxxxxxxxxx
+    │✑ ${prefix}santed ${nomore2}
+    │✑ ${prefix}serang ${nomore2}
+    │✑ ${prefix}atk ${nomore2}
     └───────────┈ ⳹
     
     *Free Atack 1x bebas nomor 1 menit*
