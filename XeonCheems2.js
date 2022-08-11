@@ -99,9 +99,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
             console.error(err)
         }
         
+
         const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
+
 	
 	const reply = (teks) => {
             XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
@@ -522,6 +524,9 @@ let buttons = [
           case 'owner': case 'developer': case 'pemilik':
           
 don = fs.readFileSync('./BotMedia/sewa.jpg')
+const replay = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+6282143067466`)
          break
@@ -603,8 +608,9 @@ break
 
        case 'ownerxen': case 'developerxen': case 'xen':
           
-don = fs.readFileSync('./BotMedia/sewa.jpg')
-
+const replay = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
       replay(`Powered By xinn bug Bot Inc`)
          break
 
