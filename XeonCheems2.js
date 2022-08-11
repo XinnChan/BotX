@@ -644,10 +644,10 @@ const replay = (teks) => {
 break
 
   case 'xen':
-  const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+  const membalas = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
-  replay(`Powered By xinn bug Bot Inc`)
+membalas(`Powered By xinn bug Bot Inc`)
 break
 
 case 'ceksewa': {
