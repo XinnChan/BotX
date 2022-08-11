@@ -603,11 +603,16 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
 break
+
        case 'xen':
+
+don = fs.readFileSync('./BotMedia/sewa.jpg')
 const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 replay(`PoweredBy Xin Bot Bug INC`,)
  break
+
+
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
           reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
