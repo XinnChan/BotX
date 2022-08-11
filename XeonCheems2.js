@@ -619,10 +619,7 @@ let buttons = [
        }
  break*/
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
-const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-}
-          replay(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
+          reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
  Sewa Bot, Untuk mengakses Fitur Santed dalam bot ini
 
