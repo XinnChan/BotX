@@ -367,13 +367,13 @@ if (!subscribe) {
 									},
 									{
 										"title": "DAHLAH",
-										
-										"rowId": `${prefix}dahlah`
+										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
+										"rowId": `${prefix}xen`
 									},
 									{
 										"title": "Jangan di pencet🗿",
-										
-										"rowId": `${prefix}pushname`
+										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
+										"rowId": `${prefix}xen`
 									}
 								]
 							}
@@ -466,13 +466,13 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 									},
 									{
 										"title": "DAHLAH",
-										
-										"rowId": `${prefix}dahlah`
+										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
+										"rowId": `${prefix}xen`
 									},
 									{
 										"title": "Jangan di pencet🗿",
-										
-										"rowId": `${prefix}pushname`
+										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
+										"rowId": `${prefix}xen`
 									}
 								]
 							}
@@ -603,21 +603,12 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
 break
-       /*case 'dahlah':
+       case 'xen':
        don = fs.readFileSync('./BotMedia/dev.jpg')
-let buttons = [
-                    {buttonId: `${prefix}dahlah`, buttonText: {displayText: 'Jangan di pencet🗿'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: don,
-                    caption:`${prefix}afk SEDANG FRESTYLE DI BAWAH INTI ATOM BUMI MATAHARI GAS PADAT CAIR UDARA ANGIN TOPAN GLEDEK NYAMBER TIANG LISTRIK ROBOH KE GEDUNG SEBELAH SKOLAHAN EH SKOLAHANNYA KENA GETHOK SAMA SUBROTO LIBUR DEH, DAHLAH W MO GENTAYANGAN DI PLUTO MARS JUPITER MATAHARI SAMBIL MENIKMATI ESKRIM COKLAT PADAT RASANYA MANIT AGAK DIKIT PAHIT ASIN ASAM HAMBAR ENAK ENGGAK YA BEGITULAH RASANYA TERBANG DI HEMBUS ANGIN MALAM DENGAN HAMPARAN 2.000.000 HZ PER SONIC BOOM MELESAT DENGAN KECEPATAN CAHAYA YANG BIKIN WUSS KETIKA LEWAT DI DEPAN GUNUNG FUJI EFEREST MERAPI TUMBANG JADI ASPAL KERING BASAH MELESETKAN API ANGIN HUJAN RINTIK RINTIK AIR BERGELOMBANG MAKAN RAMEN BERSAMA ORANG JEPANG DENGAN KUAH YANG LEZAT SEMANGKUK 30K DENGAN KERUPUK YANG RASANYA ENAK SERASA INGIN PERGI KE UJUNG DUNIA KUTUB UTARA SELATAN UNTUK MENIKMATI SECANGKIR TEH HANGAT SENDIRIAN BERSAMA KELUARGA TEMAN SAHABAT KRABAT TEMAN LAMA TEMAN BARU DOI DIA MEREKA KAMI KITA SEMUANYA AKU INGIN MENCERITAKAN SESUATU YANG MENARIK YAITU 3 BUAH PERMEN MILKITA SETARA DENGAN 120 KALORI KARENA ITU KIKO ENAK TAU🙂 `,
-                    footer:  global.footer,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-       }
- break*/
+const reply = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+reply(`PoweredBy Xin Bot Bug INC`,)
+ break
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
           reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
