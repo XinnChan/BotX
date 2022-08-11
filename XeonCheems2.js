@@ -618,10 +618,8 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
  break*/
-          case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot': 
-const reply = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-}
+          case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
+ 
           reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
  Sewa Bot, Untuk mengakses Fitur Santed dalam bot ini
@@ -645,8 +643,7 @@ const reply = (teks) => {
 ⬣ BOT on 24 JAM ⏱️
 ⬣ Menjalankan Perintah No DELAY 🚀
 
-𝗢𝗥𝗗𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚 𝗛𝗨𝗕𝗨𝗡𝗚𝗜 𝗢𝗪𝗡𝗘𝗥 𝗕𝗢𝗧 https://wa.me/+6282143067466?text=Mau+sewa+BOT+SANTED+kak
-`)
+𝗢𝗥𝗗𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚 𝗛𝗨𝗕𝗨𝗡𝗚𝗜 𝗢𝗪𝗡𝗘𝗥 𝗕𝗢𝗧 https://wa.me/+6282143067466?text=Mau+sewa+BOT+SANTED+kak`)
 break
 
   case 'tqto':
