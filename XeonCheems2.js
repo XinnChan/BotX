@@ -606,13 +606,13 @@ let buttons = [
        }
 break
 
-       case 'ownerxen': case 'developerxen': case 'xen':
+       /*case 'ownerxen': case 'developerxen': case 'xen':
           
 const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
       replay(`Powered By xinn bug Bot Inc`)
-         break
+         break*/
 
 
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
@@ -643,15 +643,11 @@ const replay = (teks) => {
 `)
 break
 
-  case 'tqto':
-  reply(`┏━━⬣ 𝐓𝐇𝐀𝐍𝐊𝐒 𝐓𝐎 
-┃ *Allah SWT*
-┃ *Nabi Muhammad SAW*
-┃⬡ Family bot
-┃⬡ Kenji
-┃⬡ Clay Comunity
-┃⬡ Fleyvin Team
-┗`)
+  case 'xen':
+  const replay = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
+  replay(`Powered By xinn bug Bot Inc`)
 break
 
 case 'ceksewa': {
