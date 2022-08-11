@@ -123,6 +123,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 	
 
         //Public & Self\\
+const reply = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
+
+        //Public & Self\\
         if (!XeonBotInc.public) {
             if (!m.key.fromMe) return
         }
@@ -515,13 +520,13 @@ let buttons = [
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
+
           case 'owner': case 'developer': case 'pemilik':
-          
-don = fs.readFileSync('./BotMedia/sewa.jpg')
-const reply = (teks) => {
+          const reply = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
 
+don = fs.readFileSync('./BotMedia/sewa.jpg')
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+6282143067466`)
          break
@@ -616,7 +621,6 @@ let buttons = [
        }
  break*/
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
- 
           reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
  Sewa Bot, Untuk mengakses Fitur Santed dalam bot ini
