@@ -474,7 +474,7 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 									{
 										"title": "Jangan di pencet🗿",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}ownerxen`
+										"rowId": `${prefix}xen`
 									}
 								]
 							}
@@ -527,7 +527,7 @@ don = fs.readFileSync('./BotMedia/sewa.jpg')
 const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
-      reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
+      replay(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+6282143067466`)
          break
         case 'listbotatk': {
