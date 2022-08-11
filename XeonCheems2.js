@@ -100,7 +100,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
         }
         
         const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
 	
 	const reply = (teks) => {
