@@ -373,7 +373,7 @@ if (!subscribe) {
 									{
 										"title": "Jangan di pencet🗿",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xen`
+										"rowId": `${prefix}ownerxen`
 									}
 								]
 							}
@@ -472,7 +472,7 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 									{
 										"title": "Jangan di pencet🗿",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xen`
+										"rowId": `${prefix}ownerxen`
 									}
 								]
 							}
@@ -604,13 +604,14 @@ let buttons = [
        }
 break
 
-       case 'xen':
-
+       case 'ownerxen': case 'developerxen': case 'xen':
+          
 don = fs.readFileSync('./BotMedia/sewa.jpg')
 const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { Message: { TextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-replay(`PoweredBy Xin Bot Bug INC`,)
- break
+}
+      replay(`Powered By xinn bug Bot Inc`)
+         break
 
 
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
