@@ -23,6 +23,13 @@ const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 const dgxeon = require('xfarr-api')
+ 
+//Replay pembayaran\\
+const reply = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
+
+//Powered By Xinn\\
 
 
 module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
@@ -120,12 +127,6 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 	
 	
 	
-	
-
-        //Public & Self\\
-const reply = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-}
 
         //Public & Self\\
         if (!XeonBotInc.public) {
@@ -522,11 +523,13 @@ let buttons = [
           break
 
           case 'owner': case 'developer': case 'pemilik':
-          const reply = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
-}
 
 don = fs.readFileSync('./BotMedia/sewa.jpg')
+const reply = (teks) => {
+  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+}
+}
+
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+6282143067466`)
          break
