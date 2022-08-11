@@ -99,7 +99,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
             console.error(err)
         }
         
-        const repli = (teks) => {
+        const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
 	
@@ -107,9 +107,9 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
             XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
         }
         
-        const replay = (teks) => {
+        /*const replay = (teks) => {
             XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
-        }
+        }*/
 
 //bug nya
 	const virus =  {
@@ -522,7 +522,7 @@ let buttons = [
           case 'owner': case 'developer': case 'pemilik':
           
 don = fs.readFileSync('./BotMedia/sewa.jpg')
-const repli = (teks) => {
+const replay = (teks) => {
   XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
 }
       reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
