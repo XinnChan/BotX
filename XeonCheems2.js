@@ -540,36 +540,145 @@ XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requ
 case 'xenbugv':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
-"text": `mwehee`,
-}
-}}}), { userJid: m.chat, quoted: m })
-XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-         break
-case 'xenbugv':
- var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-"requestPaymentMessage": {
-"requestFrom":`${nomore2}`,
-"currencyCodeIso4217": "IDR",
-"amount1000": "9999999999999999999999",
-"Message": {
-"extendedTextMessage": {
+"requestFrom":`${pushname}`,
 "text": `Powered By Xin`,
 }
 }}}), { userJid: m.chat, quoted: m })
 XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-         break
-case 'xenbugv':
- var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
-"text": `Kenji wass here bro`,
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"requestFrom":`${pushname}`,
+"text": `Powered By Xin`,
 }
 }}}), { userJid: m.chat, quoted: m })
 XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -660,7 +769,14 @@ const replay = (teks) => {
 
 
           case 'sewa': case 'sewabot': case 'botsewa': case 'rentbot':
-          reply(`────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
+          var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom":`${nomore2}@s.whatsapp.net`,
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"noteMessage": {
+"extendedTextMessage": {
+"text": `────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
 
  Sewa Bot, Untuk mengakses Fitur Santed dalam bot ini
 
@@ -684,7 +800,10 @@ const replay = (teks) => {
 ⬣ Menjalankan Perintah No DELAY 🚀
 
 𝗢𝗥𝗗𝗘𝗥 𝗦𝗘𝗞𝗔𝗥𝗔𝗡𝗚 𝗛𝗨𝗕𝗨𝗡𝗚𝗜 𝗢𝗪𝗡𝗘𝗥 𝗕𝗢𝗧 https://wa.me/+6282143067466?text=Mau+sewa+BOT+SANTED+kak
-`)
+`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
 break
 
   case 'xen':
