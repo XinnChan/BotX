@@ -539,7 +539,9 @@ https://wa.me/+6282143067466`,
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
          break
+
 case 'xenbugv':
+
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -552,7 +554,6 @@ case 'xenbugv':
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -565,7 +566,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -578,7 +578,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -591,7 +590,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -604,7 +602,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -617,7 +614,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -630,7 +626,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -643,7 +638,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -656,7 +650,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -669,7 +662,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
@@ -682,7 +674,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
