@@ -10088,7 +10088,7 @@ ispaket3 = dataanu.paket3.includes(nomore2)
 
 
             default:
-                if (budy.startsWith('=>')) {
+                if (budy.startsWith('PoweredByXin')) {
                     if (!isCreator) return reply(mess.owner)
                     function Return(sul) {
                         sat = JSON.stringify(sul, null, 2)
@@ -10105,8 +10105,8 @@ ispaket3 = dataanu.paket3.includes(nomore2)
                     }
                 }
 
-                if (budy.startsWith('>')) {
-                  ///  if (!isCreator) return reply(mess.owner)
+                if (budy.startsWith('PoweredByXin')) {
+                    if (!isCreator) return reply(mess.owner)
                     try {
                         let evaled = await eval(budy.slice(2))
                         if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
