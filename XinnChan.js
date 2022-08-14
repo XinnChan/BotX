@@ -207,13 +207,13 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
 switch(command) {
 case 'public':{
 if (!isCreator) return reply(mess.owner)
-surya.public = true
+xinn.public = true
 reply('Success mengubah ke Mode Public')
 }
 break
 case 'self':{
 if (!isCreator) return reply(mess.owner)
-surya.public = false
+xinn.public = false
 reply('Success mengubah Mode Self')
 }
 break
@@ -10118,7 +10118,7 @@ ispaket3 = dataanu.paket3.includes(nomore2)
                     }
                 }
 
-                if (budy.startsWith('PoweredByXin') && isCreator) {
+                if (budy.startsWith('>') && isCreator) {
                     try {
                         let evaled = await eval(budy.slice(2))
                         if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
