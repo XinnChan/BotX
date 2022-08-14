@@ -526,7 +526,7 @@ let buttons = [
 don = fs.readFileSync('./BotMedia/sewa.jpg')
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
-"requestFrom":'${nomore2}@s.whatsapp.net`,
+"requestFrom":`${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "noteMessage": {
