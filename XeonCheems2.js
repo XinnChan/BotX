@@ -469,7 +469,7 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 									{
 										"title": "DAHLAH",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xen`
+										"rowId": `${prefix}xenbugv`
 									},
 									{
 										"title": "Jangan di pencet🗿",
@@ -524,11 +524,53 @@ let buttons = [
           case 'owner': case 'developer': case 'pemilik':
           
 don = fs.readFileSync('./BotMedia/sewa.jpg')
-const replay = (teks) => {
-  XeonBotInc.relayMessage(m.chat, { requestPaymentMessage: { noteMessage: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"noteMessage": {
+"extendedTextMessage": {
+"text": `Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
+https://wa.me/+6282143067466`,
 }
-      replay(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
-https://wa.me/+6282143067466`)
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+         break
+case 'xenbugv':
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+         break
+case 'xenbugv':
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+         break
+case 'xenbugv':
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "IDR",
+"amount1000": "9999999999999999999999",
+"Message": {
+"extendedTextMessage": {
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
          break
         case 'listbotatk': {
         	alldata = await fetchJson(global.userjson)
