@@ -527,7 +527,7 @@ don = fs.readFileSync('./BotMedia/sewa.jpg')
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom":`${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "IDR",
+"currencyCodeIso4217": "USD",
 "amount1000": "9999999999999999999999",
 "noteMessage": {
 "extendedTextMessage": {
@@ -541,7 +541,7 @@ case 'xenbugv':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "IDR",
+"currencyCodeIso4217": "USD",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -673,7 +673,7 @@ XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requ
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "IDR",
+"currencyCodeIso4217": "USD",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -772,7 +772,7 @@ const replay = (teks) => {
           var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom":`${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "IDR",
+"currencyCodeIso4217": "USD",
 "amount1000": "9999999999999999999999",
 "noteMessage": {
 "extendedTextMessage": {
