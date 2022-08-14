@@ -543,7 +543,7 @@ case 'xenbugv':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -555,7 +555,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -567,7 +567,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -579,7 +579,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -591,7 +591,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -603,7 +603,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -615,7 +615,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -627,7 +627,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -639,7 +639,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -651,7 +651,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -663,7 +663,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
@@ -675,10 +675,10 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
-"currencyCodeIso4217": "USD",
+"currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
-"extendedTextMessage": {
+"TextMessage": {
 "requestFrom":`${pushname}`,
 "text": `Powered By Xin`,
 }
