@@ -378,6 +378,11 @@ if (!subscribe) {
 										"title": "ABOUT THIS DEVELOPER",
 										"description": "Kenalan dengan Developer BOT",
 										"rowId": `${prefix}aboutdev`
+									},
+									{
+										"title": "LINK GROUP BOT OFFC",
+										"description": "Klik ini untuk menampilkan link kumpulan boters WhatsApp",
+										"rowId": `${prefix}linkgroupoffc`
 									}
 								]
 							}
@@ -477,6 +482,11 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 										"title": "Xenpay",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
 										"rowId": `${prefix}xenpay`
+									},
+									{
+										"title": "LINK GROUP BOT OFFC",
+										"description": "Klik ini untuk menampilkan link kumpulan boters WhatsApp",
+										"rowId": `${prefix}linkgroupoffc`
 									}
 								]
 							}
@@ -523,6 +533,18 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
+case 'linkgroupoffc':
+> var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "USD",
+"amount1000": "88888888888888888888888888888888888888888",
+"noteMessage": {
+"extendedTextMessage": {
+"text": `Klik tautan di bawah untuk bergabung ke group cuyy👇😌👌\nhttps://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp`,
+}
+}}}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+break
           case 'owner': case 'developer': case 'pemilik':
           
 don = fs.readFileSync('./BotMedia/sewa.jpg')
