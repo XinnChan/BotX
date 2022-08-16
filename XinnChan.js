@@ -534,7 +534,7 @@ let buttons = [
        }
           break
 case 'linkgroupoffc':
-> var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "USD",
 "amount1000": "88888888888888888888888888888888888888888",
