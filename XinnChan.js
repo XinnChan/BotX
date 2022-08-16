@@ -540,7 +540,7 @@ case 'linkgroupoffc':
 "amount1000": "88888888888888888888888888888888888888888",
 "noteMessage": {
 "extendedTextMessage": {
-"text": `Klik tautan di bawah untuk bergabung ke group cuyy👇😌👌\nhttps://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp`,
+"text": `Klik tautan di bawah untuk bergabung ke group BOT OFFC gw cuyy👇😌👌\nhttps://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
