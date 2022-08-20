@@ -586,7 +586,8 @@ xinn.relayMessage(idg, {requestPaymentMessage: {message: {TextMessage: { text: '
 //setTimeout(() => {xinn.groupLeave(idg)}, 10000)
 reply(mess.success)
 }
-breakcase 'santedgrup': case 'santedgc':
+break
+case 'santedgrup': case 'santedgc':
 
 if (!isOwner) return onlyOwner()
 if (!args[0]) return reply('Masukin id grupnya!')
