@@ -565,7 +565,6 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 
 case 'join':{
 
-if (!isOwner) return onlyOwner()
 if (!q) return reply('Masukkan Link Group!')
 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return reply(mess.error.lv)
 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -574,7 +573,6 @@ await xinn.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch
 break
 case 'xenpaygc':{
 
-if (!isOwner) return onlyOwner()
 
 idg = q.replace(/[^0-9]/g, '')+'@g.us'
 if (!idg) return reply('Masukin id grupnya!')
@@ -589,7 +587,6 @@ reply(mess.success)
 break
 case 'santedgrup': case 'santedgc':
 
-if (!isOwner) return onlyOwner()
 if (!args[0]) return reply('Masukin id grupnya!')
 if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
 let gcmd = await xinn.groupMetadata(args[0]).catch(e => {})
