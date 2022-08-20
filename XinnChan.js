@@ -489,6 +489,11 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 										"rowId": `${prefix}xentag`
 									},
 									{
+										"title": "BUG MENU",
+										"description": "Untuk melihat list menu bug bot",
+										"rowId": `${prefix}bugmenu`
+									},
+									{
 										"title": "LINK GROUP BOT OFFC",
 										"description": "Klik ini untuk menampilkan link kumpulan boters WhatsApp",
 										"rowId": `${prefix}linkgroupoffc`
