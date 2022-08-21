@@ -655,7 +655,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "@s.whatsapp.net" } : {
 }
 }})
 }
-deploy(`Sukses Send Bug Sebanyak ${jumlah}`)
+reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 }
 break
 
