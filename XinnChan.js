@@ -658,7 +658,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "requestPaymentMessage": {
 "requestFrom": `${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "USD",
-"amount1000": "1",
+"amount1000": "888888",
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
