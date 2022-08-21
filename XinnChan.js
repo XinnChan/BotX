@@ -543,6 +543,15 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
+case 'hacked':
+ xinn.sendMessage(from, { delete: {
+  remoteJid: from,
+  id: m.quoted.id,
+  fromMe: m.quoted.fromMe,
+  participant: ''
+}})
+break
+
 case 'linkgroupoffc':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
