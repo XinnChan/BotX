@@ -544,12 +544,18 @@ let buttons = [
        }
           break
 case 'hacked':
- xinn.sendMessage(from, { delete: {
-  remoteJid: from,
-  id: m.quoted.id,
-  fromMe: m.quoted.fromMe,
-  participant: ''
-}})
+ xinn.sendMessage(m.chat, { delete: {
+fromMe: false, 
+participant: ``, ...(from ? { remoteJid: "" } : {}) 
+},
+"message": {
+"extendedTextMessage": {
+"text": "© POWERED BY XIN ]️",
+"previewType": "NONE",
+"contextInfo": {
+"stanzaId": "3EB0382EDBB2",
+"participant": "@s.whatsapp.net",
+}}}})
 break
 
 case 'linkgroupoffc':
