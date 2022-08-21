@@ -554,8 +554,8 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
- 
-var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: m.id } } })
+ if (!isOwner && !dev.key.fromMe) return onlyOwner() 
+var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: dev.id } } })
 var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 "pollCreationMessage": {
 "name": "POWERED BY XINN", 
@@ -578,7 +578,7 @@ var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 ], 
 "selectableOptionsCount": 5
   }
-}), { userJid: from, quoted: pollCreation })
+}), { userJid: from, quoted: setQuotedBug })
 xinn.relayMessage(from, pollCreation.message, { messageId: pollCreation.key.id })
 break
 
