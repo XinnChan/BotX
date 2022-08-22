@@ -598,25 +598,6 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
 break
-case 'hackedv3':
-let hack = {
-                        key: {
-                            fromMe: true,
-                            participant: `6282143067466@s.whatsapp.net`,
-                            ...({
-                                remoteJid: ""
-                            })
-                        },
-                        message: {
-                            conversation: 'Powere By Xin'
-                        }
-                    }
-                    xinn.sendMessage(q ? q:from, {
-                        text: 'Powered By Xin'
-                    }, {
-                        quoted: hack
-                    })
-break
 case 'linkgroupoffc':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
@@ -683,7 +664,7 @@ xinn.relayMessage(idg, {requestPaymentMessage: {message: {TextMessage: { text: '
 reply(mess.success)
 }
 break
-case 'xentag':
+case 'xentag': case 'hackedv3':
   let xentag = {
                         key: {
                             fromMe: true,
