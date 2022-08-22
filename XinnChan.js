@@ -546,11 +546,9 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
-case 'hack1'
- xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_GROUP_EPHEMERAL }).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
-break
 
-case 'hack2'
+
+case 'hack1'
 for (let i of groupAdmins){
 if (i === botNumber){
 }else{
@@ -662,7 +660,7 @@ case 'joinv2':
             var response = await xinn.acceptInvite(codeInvite)
             reply('SUKSES')
             } catch {
-            reply('LINK ERROR!')
+            reply('GAGAL MENGGUNAKAN FITUR INI SILAHKAN GANTI SATUNYA')
             }
             break
 
