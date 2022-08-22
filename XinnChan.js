@@ -560,22 +560,16 @@ xinn.groupParticipantsUpdate(from, [i], 'demote')
 }
 break
 
-case 'promote':
- 
-					if (xinn.message.extendedTextMessage === undefined || xinn.message.extendedTextMessage === null) return
-					mentioned = xinn.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Berhasil Promote\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
-						}
-						mentions(from, mentioned, true)
-						xinn.groupRemove(from, mentioned)
-					} else {
-						mentions(`Berhasil Promote @${mentioned[0].split('@')[0]} Sebagai Admin Group!`, mentioned, true)
-						xinn.groupMakeAdmin(from, mentioned)
-					}
+case 'promote': {
+let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+xinn.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+}
+break
 
+case 'demote': {
+let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+xinn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+}
 break
 
 case 'hackedv1':
