@@ -1019,7 +1019,7 @@ const replay = (teks) => {
 "requestPaymentMessage": {
 "requestFrom":`${nomore2}@s.whatsapp.net`,
 "currencyCodeIso4217": "USD",
-"amount1000": "9999999999999999999999",
+"amount1000": "1000",
 "noteMessage": {
 "extendedTextMessage": {
 "text": `────❲ 𝚂𝚎𝚠𝚊 𝙱𝚘𝚝 ❳────
