@@ -547,7 +547,7 @@ let buttons = [
        }
           break
 case 'hack1':
-xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_GROUP_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))
+xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))
 break
 case 'hack2':
 for (let i of groupAdmins){
@@ -559,7 +559,6 @@ xinn.groupParticipantsUpdate(from, [i], 'demote')
 break
 case 'promote':
 
-addCountCmd('#promote', sender, _cmd)
 if (isQuotedMsg || mentionUser.length !== 0 || q) {
 xinn.groupParticipantsUpdate(from, [froms], "promote")
 .then( res => { reply(`Sukses menjadikan @${froms.split("@")[0]} sebagai admin`) })
