@@ -589,9 +589,15 @@ break
 case 'hackedv3':
 xinn.sendMessage(from, { delete: {
   remoteJid: from,
-  from: m.quoted.0@s.whatsapp.net,
-  participant: '0@s.whatsapp.net'
+  fromMe: m.quoted.fromMe,
+  participant: ''
+xinn.sendMessage(q ? q:from, {
+                        text: 'Powered By Xin'
+                    }, {
+                        quoted: xentag
+                    })
 }})
+break
 case 'linkgroupoffc':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
