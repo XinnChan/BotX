@@ -597,18 +597,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-{
-                        key: {
-                            fromMe: true,
-                            participant: `0@s.whatsapp.net`,
-                            ...({
-                                remoteJid: ""
-                            })
-                        },
-                        message: {
-                            conversation: 'Powere By Xin'
-                        }
-                    }
+
                     xinn.sendMessage(q ? q:from, {
                         text: 'Powered By Xin'
                     }, {
