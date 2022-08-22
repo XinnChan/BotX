@@ -546,9 +546,11 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
+
 case 'hack1':
 xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))
 break
+
 case 'hack2':
 for (let i of groupAdmins){
 if (i === botNumber){
@@ -557,13 +559,26 @@ xinn.groupParticipantsUpdate(from, [i], 'demote')
 }
 }
 break
+
 case 'promote':
  
-xinn.groupParticipantsUpdate(from, [froms], "promote")
-.then( res => { reply(`Sukses menjadikan @${froms.split("@")[0]} sebagai admin`) })
-.catch(() => reply(mess.error.api))
-} else reply(`Tag atau balas pesan member yang ingin dijadikan admin`)
+if (!isGroup) return reply(mess.only.group) 
+					if (xinn.message.extendedTextMessage === undefined || xinn.message.extendedTextMessage === null) return
+					mentioned = xinn.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Berhasil Promote\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(from, mentioned, true)
+						xinn.groupRemove(from, mentioned)
+					} else {
+						mentions(`Berhasil Promote @${mentioned[0].split('@')[0]} Sebagai Admin Group!`, mentioned, true)
+						xinn.groupMakeAdmin(from, mentioned)
+					}
+
 break
+
 case 'hackedv1':
 xinn.sendMessage(from, { delete: {
   remoteJid: from,
