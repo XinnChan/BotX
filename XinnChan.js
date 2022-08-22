@@ -592,17 +592,27 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "currencyCodeIso4217": "USD",
 "amount1000": "100",
 "Message": {
-"fromMe": true,
-"participant": `0@s.whatsapp.net`,
 "TextMessage": {
 "text": `Powered By Xin`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-xinn.sendMessage(q ? q:from, {
+{
+                        key: {
+                            fromMe: true,
+                            participant: `0@s.whatsapp.net`,
+                            ...({
+                                remoteJid: ""
+                            })
+                        },
+                        message: {
+                            conversation: 'Powere By Xin'
+                        }
+                    }
+                    xinn.sendMessage(q ? q:from, {
                         text: 'Powered By Xin'
                     }, {
-                        quoted: requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id }
+                        quoted: xentag
                     })
 break
 case 'linkgroupoffc':
