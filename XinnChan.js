@@ -573,7 +573,7 @@ xinn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(js
 break
 
 case 'z':
- xinn.sendMessage(m.chat, { text : value, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+ xinn.sendMessage(m.chat, { text : `Tolong Baca Tag Pesan!!!`, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
 case 'kudetav1':
