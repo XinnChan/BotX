@@ -562,7 +562,6 @@ break
 
 case 'promote':
  
-if (!isGroup) return reply(mess.only.group) 
 					if (xinn.message.extendedTextMessage === undefined || xinn.message.extendedTextMessage === null) return
 					mentioned = xinn.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
