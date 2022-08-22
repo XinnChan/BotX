@@ -558,7 +558,7 @@ xinn.groupParticipantsUpdate(from, [i], 'demote')
 }
 break
 case 'promote':
- {
+ 
 xinn.groupParticipantsUpdate(from, [froms], "promote")
 .then( res => { reply(`Sukses menjadikan @${froms.split("@")[0]} sebagai admin`) })
 .catch(() => reply(mess.error.api))
