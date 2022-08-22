@@ -590,11 +590,11 @@ case 'hackedv3':
 xinn.sendMessage(from, { delete: {
   remoteJid: from,
   fromMe: m.quoted.fromMe,
-  participant: ''
-xinn.sendMessage(q ? q:from, {
+  participant: '0@s.whatsapp.net'
+xinn.sendMessage(delete ? delete:from, {
                         text: 'Powered By Xin'
                     }, {
-                        quoted: xentag
+                        quoted: nomore2
                     })
 }})
 break
