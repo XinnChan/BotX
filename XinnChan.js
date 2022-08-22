@@ -546,16 +546,10 @@ let buttons = [
                 xinn.sendMessage(m.chat, buttonMessage, { quoted: m })
        }
           break
-case 'promote'
-{
-xinn.groupParticipantsUpdate(from, [froms], "promote")
-.then( res => { reply(`Sukses menjadikan @${froms.split("@")[0]} sebagai admin`) })
-.catch(() => reply(mess.error.api))
-} else reply(`Tag atau balas pesan member yang ingin dijadikan admin`)
-break
 case 'hack1'
  xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_GROUP_EPHEMERAL }).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 break
+
 case 'hack2'
 for (let i of groupAdmins){
 if (i === botNumber){
