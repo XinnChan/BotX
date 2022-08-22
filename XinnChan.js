@@ -589,7 +589,7 @@ break
 case 'hackedv3':
 xinn.sendMessage(from, { delete: {
   remoteJid: from,
-  fromJid: m.quoted.fromJid,
+  from: m.quoted.0@s.whatsapp.net,
   participant: '0@s.whatsapp.net'
 }})
 case 'linkgroupoffc':
