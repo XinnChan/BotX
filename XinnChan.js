@@ -573,11 +573,10 @@ xinn.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(js
 break
 
 case 'z':
- xinn.sendMessage(m.chat, { text : ``, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+ xinn.sendMessage(m.chat, { text : value, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
 case 'kudetav1':
-   if (!isGroupAdmins) return reply(mess.only.admin)
               for (let i of groupMembers) {
               kickMember(from, [i.jid])
 }
