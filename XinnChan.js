@@ -559,7 +559,7 @@ case 'owner':
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
-reply(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
+replay(`Hii👋${pushname} apakah anda mencari owner saya?, Ini adalah nomor Owner WhatsApp BOT namanya Xin kenji jangan lupa save ya mari kita berteman dan saling berbagi informasi sekilas tentang bot😄
 https://wa.me/+6282143067466`,)
 break
 
