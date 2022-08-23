@@ -112,6 +112,10 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
         /*const replay = (teks) => {
             xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
         }*/
+//virtex
+const { ngazap } = require ('./src/ngazap')
+//Powered By Xinn
+
 const sendRacMessage = (id, text1 = {}) => {
 const reactionMessage = {react: {text: text1,key: m.key}}
 xinn.sendMessage(id, reactionMessage)}
