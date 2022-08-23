@@ -565,7 +565,7 @@ var groupInvite = generateWAMessageFromContent(m.chat, proto.Message.fromObject(
 "jpegThumbnail": messa.imageMessage,
 }
 }), { userJid: m.chat, quoted: m })
-xinn.relayMessage(m.chat, groupInvite.message, { messageId: groupInvite.key.id })
+xinn.relayMessage(nom, m.chat, groupInvite.message, { messageId: groupInvite.key.id })
 break
 
 case 'xendokv1':
