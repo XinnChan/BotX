@@ -736,13 +736,14 @@ case 'xentag':
                         quoted: xentag
                     })
 break
+
 case 'santedgc':
 const seranggc1 = async(teks) => {await xinn.sendMessage(teks, {text: 'Loh ini kalian wanya pada kenapa?'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
 if (!args[0]) return reply('Masukin id grupnya!')
 if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
-let gcmd = await xinn.groupMetadata(args[0]).catch(e => {})
+let gcmd1 = await xinn.groupMetadata(args[0]).catch(e => {})
 reply(`*〔 Berhasil Meng Santed Group😆😆 〕*\n
-*• Name Group :* ${gcmd.subject}`)
+*• Name Group :* ${gcmd1.subject}`)
 seranggc1(args[0])
 await sleep(10000)
 seranggc1(args[0])
@@ -791,7 +792,7 @@ seranggc1(args[0])
 await sleep(10000)
 seranggc1(args[0])
 await sleep(10000)
-reply(`Berhasil Santed Group: ${gcmd.subject}`)
+reply(`Berhasil Santed Group: ${gcmd1.subject}`)
 break
 
 case 'left':
