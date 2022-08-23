@@ -552,8 +552,8 @@ let buttons = [
           break
 
 case 'xenpc':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
-if (!nomore2) return reply('Masukin nomor target!')
+const nom = m.sender.replace(/[^0-9]/g, '')
+if (!nom) return reply('Masukin nomor target!')
  var messa = prepareWAMessageMedia({ image: fs.readFileSync('./BotMedia/zarin.jpg') }, { upload: xinn.waUploadToServer })
 var groupInvite = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "groupInviteMessage": {
