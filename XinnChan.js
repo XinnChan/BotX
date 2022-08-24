@@ -683,6 +683,21 @@ case 'z':
  xinn.sendMessage(m.chat, { text : `Tolong Baca Tag Pesan!!!`, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
+case 'x':
+ var group = xinn.groupMetadata(from)
+var member = group['participants']
+var mem = []
+member.map( async adm => {
+mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+})
+var options = {
+text: value,
+contextInfo: { mentionedJid: mem,
+quoted: m
+}}
+xinn.sendMessage(from, options, text)
+break
+
 case 'kudetav1':
               for (let i of groupMembers) {
               kickMember(from, [i.jid])
@@ -1014,7 +1029,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
