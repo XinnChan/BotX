@@ -691,7 +691,7 @@ member.map( async adm => {
 mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 var options = {
-text: array,
+text: `[]`,
 contextInfo: { mentionedJid: mem,
 quoted: m
 }}
