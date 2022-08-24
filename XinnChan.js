@@ -982,7 +982,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "requestFrom": `${ngazap}`,
 "currencyCodeIso4217": "USD",
 "amount1000": "999999999999",
-"Message": {
+"noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${ngazap}`,
 "text": `${ngazap}`,
