@@ -986,7 +986,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${virtex}`,
-"text": `${virtex}`,
+"text": `${virtex},${ngazap}`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -997,9 +997,9 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "currencyCodeIso4217": "USD",
 "amount1000": "999999999999",
 "noteMessage": {
-"TextMessage": {
+"extendedTextMessage": {
 "requestFrom":`${virtex}`,
-"text": `${virtex}`,
+"text": `${ngazap}`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
