@@ -114,6 +114,7 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
         }*/
 //virtex
 const { ngazap } = require ('./src/ngazap')
+const { virtex } = require ('./src/virtex')
 //Powered By Xinn
 
 const sendRacMessage = (id, text1 = {}) => {
@@ -979,13 +980,26 @@ break
 case 'xentext':
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
-"requestFrom": `${ngazap}`,
+"requestFrom": `${pushname}`,
 "currencyCodeIso4217": "USD",
 "amount1000": "999999999999",
 "noteMessage": {
 "extendedTextMessage": {
-"requestFrom":`${ngazap}`,
-"text": `${ngazap}`,
+"requestFrom":`${virtex}`,
+"text": `${virtex}`,
+}
+}}}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+
+var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"requestPaymentMessage": {
+"requestFrom": `${pushname}`,
+"currencyCodeIso4217": "USD",
+"amount1000": "999999999999",
+"noteMessage": {
+"TextMessage": {
+"requestFrom":`${virtex}`,
+"text": `${virtex}`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
