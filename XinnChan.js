@@ -688,11 +688,11 @@ case 'x':
 var member = group['participants']
 var member = []
 member.map( async adm => {
-mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+member.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 var options = {
 text: `[]`,
-contextInfo: { mentionedJid: mem,
+contextInfo: { mentionedJid: member,
 quoted: m
 }}
 xinn.sendMessage(from, options, text)
