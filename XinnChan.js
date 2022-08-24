@@ -684,9 +684,9 @@ case 'z':
 break
 
 case 'x':
- var group = xinn.groupMetadata(from)
+  var group = xinn.groupMetadata(from)
 var member = group['participants']
-var mem = []
+var member = []
 member.map( async adm => {
 mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
