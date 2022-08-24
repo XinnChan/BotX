@@ -985,8 +985,8 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "amount1000": "999999999999",
 "noteMessage": {
 "extendedTextMessage": {
-"requestFrom":`${virtex}`,
-"text": `${virtex},${ngazap}`,
+"requestFrom":`${virtex(prefix)}`,
+"text": `${virtex(prefix)},${ngazap(prefix)}`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -998,8 +998,8 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "amount1000": "999999999999",
 "noteMessage": {
 "extendedTextMessage": {
-"requestFrom":`${virtex}`,
-"text": `${ngazap}`,
+"requestFrom":`${virtex(prefix)}`,
+"text": `${ngazap(prefix)}`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
