@@ -654,15 +654,10 @@ reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 break
 case 'tagall':
 
-	 {
-	    subscribe = dataanu.datanomor.includes(nomore2)
-const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
-
  let teks = `══✪〘 *TAG ALL* 〙✪══`
 for (let mem of participants) {
 teks += `\n⭔ @${mem.id.split('@')[0]}\n`
 xinn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
-}
 break
 
 case 'hack1':
