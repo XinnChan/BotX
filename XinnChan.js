@@ -783,10 +783,6 @@ xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })}
 break
 case 'hackedv3':
 
-	{ 
-	    subscribe = dataanu.datanomor.includes(nomore2)
-const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
-
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "USD",
