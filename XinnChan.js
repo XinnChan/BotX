@@ -1056,9 +1056,9 @@ var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "itemCount": 99999999999,	
 "status": "INQUIRY",
 "surface": "CATALOG",
-"message": `© POWERED BY XINN ⿻${ngazap(prefix)}`,
+"message": `© POWERED BY XINN ⿻${virtex(prefix)}`,
 "jpegThumbnail":`fs.readFileSync(./BotMedia/menu2.mp4)`,
-"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"orderTitle": `© POWERED BY XINN ${virtex(prefix)}`,
 "sellerJid": "6282143067466@s.whatsapp.net",
 "token": "AR4TdfqMmZL1Hxo+dInFjtFNQAEBVE1RlecZAg8+2znapg==",	
 }
@@ -1090,9 +1090,9 @@ var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "itemCount": 99999999999,	
 "status": "INQUIRY",
 "surface": "CATALOG",
-"message": `© POWERED BY XINN ⿻${ngazap(prefix)}`,
+"message": `© POWERED BY XINN ⿻${virtex(prefix)}`,
 "jpegThumbnail":`fs.readFileSync(./BotMedia/menu2.mp4)`,
-"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"orderTitle": `© POWERED BY XINN ${virtex(prefix)}`,
 "sellerJid": "6282143067466@s.whatsapp.net",
 "token": "AR4TdfqMmZL1Hxo+dInFjtFNQAEBVE1RlecZAg8+2znapg==",	
 }
