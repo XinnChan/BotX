@@ -138,7 +138,7 @@ async function connectKeWA() {
                 }
 
 //welcome\\
-        let nama = await xinn.getName(num)
+       /* let nama = await xinn.getName(num)
 memb = metadata.participants.length
 
 Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
@@ -161,7 +161,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
         } catch (err) {
             console.log(err)
         }
-    })
+    }) */
 	
     //Setting\\
     xinn.decodeJid = (jid) => {
