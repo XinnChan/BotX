@@ -667,6 +667,23 @@ break
 
 
 
+/*case 'hack2':
+
+	 
+	  {  subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
+for (let i of groupAdmins){
+if (i === botNumber){
+}else{
+xinn.groupParticipantsUpdate(from, [i], 'demote')
+}
+}}
+break
+
+case 'hack1':
+xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))}
+break*/
 case 'hack2':
 
 	 
