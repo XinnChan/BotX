@@ -101,11 +101,11 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
 
 	
 	const reply = (teks) => {
-            xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
+            xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J3X9mx4XteH02PugMLqMOE"}}}, { quoted: m})
         }
         
         /*const replay = (teks) => {
-            xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp"}}}, { quoted: m})
+            xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J3X9mx4XteH02PugMLqMOE"}}}, { quoted: m})
         }*/
 //virtex
 const { ngazap } = require ('./src/ngazap')
@@ -790,14 +790,14 @@ xinn.sendMessage(q ? q:from, {
                         quoted: requestPaymentMessage
                     })
 break
-case 'linkgroupoffc':
+case 'linkgroupoffc': case 'linkgrup': case 'linkgc': case 'linkgroup':
  var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "USD",
 "amount1000": "88888888888888888888888888888888888888888",
 "noteMessage": {
 "extendedTextMessage": {
-"text": `Klik tautan di bawah untuk bergabung ke group BOT OFFC gw cuyy👇😌👌\nhttps://chat.whatsapp.com/GV7aZJEEPGa1GhJe4j3nZp`,
+"text": `Klik tautan di bawah untuk bergabung ke group BOT OFFC gw cuyy👇😌👌\nhttps://chat.whatsapp.com/J3X9mx4XteH02PugMLqMOE`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
