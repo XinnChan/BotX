@@ -145,7 +145,7 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
-                    xinn.sendMessage(anu.id, { location: Kon, contextInfo: { mentionedJid: [num] }, caption: `
+                    xinn.sendMessage(anu.id, { webpage: Kon, contextInfo: { mentionedJid: [num] }, caption: `
 🐶✑ Hi👋 @${num.split("@")[0]},
 🐶✑ Welcome To ${metadata.subject}
 
@@ -153,7 +153,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 🐶✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
                 } else if (anu.action == 'remove') {
-                    xinn.sendMessage(anu.id, { location: Tol, contextInfo: { mentionedJid: [num] }, caption: `🐶✑ @${num.split("@")[0]} Left ${metadata.subject}
+                    xinn.sendMessage(anu.id, { webpage: Tol, contextInfo: { mentionedJid: [num] }, caption: `🐶✑ @${num.split("@")[0]} Left ${metadata.subject}
 
 🐶✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
                 }
