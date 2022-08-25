@@ -577,6 +577,11 @@ xinn.relayMessage(m.chat, groupInvite.message, { messageId: groupInvite.key.id }
 break
 
 case 'xendokv1':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
  var document = generateWAMessageFromContent(m.chat, proto.Message.fromObject({	
 "documentMessage": {
 "url": "https://mmg.whatsapp.net/d/f/AjZ6wydBPTW9LotpjZK5gSstbxj0L_B2sCeSm-JWLPPS.enc",
@@ -611,6 +616,11 @@ xinn.relayMessage(m.chat, document.message, { messageId: document.key.id })
 break
 
 case 'stick':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
  {
 if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
 jumlah = `${encodeURI(q)}`
@@ -643,6 +653,11 @@ reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 }
 break
 case 'tagall':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
  let teks = `══✪〘 *TAG ALL* 〙✪══`
 for (let mem of participants) {
 teks += `\n⭔ @${mem.id.split('@')[0]}\n`
@@ -654,6 +669,11 @@ xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).t
 break
 
 case 'hack2':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
 for (let i of groupAdmins){
 if (i === botNumber){
 }else{
@@ -722,6 +742,11 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
  var sticker = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "stickerMessage": {
 "url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
@@ -774,6 +799,11 @@ xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 break
 case 'hackedv3':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "currencyCodeIso4217": "USD",
@@ -820,7 +850,13 @@ https://wa.me/+6282143067466`,
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
          break
 
-case 'joinv1':{
+case 'joinv1':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
+{
 
 if (!q) return reply('Masukkan Link Group!')
 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return reply(mess.error.lv)
@@ -843,7 +879,10 @@ case 'joinv2':
             break
 
 case 'xenpaygc':{
-
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
 
 idg = q.replace(/[^0-9]/g, '')+'@g.us'
 if (!idg) return reply('Masukin id grupnya!')
@@ -877,6 +916,11 @@ case 'xentag':
 break
 
 case 'santedgc':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
 const seranggc1 = async(teks) => {await xinn.sendMessage(teks, {text: 'Loh ini kalian wanya pada kenapa?'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
 if (!args[0]) return reply('Masukin id grupnya!')
 if (!args[0].includes('@g.us')) return reply('Masukkan id grup yang benar!')
@@ -958,7 +1002,10 @@ reply(`Berhasil Keluar Dengan Meninggalkan Jejak Dari Group: ${gcmd.subject} Heh
 break
 
 case 'xendok':{
-
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
 
 if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
 jumlah = `${encodeURI(q)}`
@@ -988,6 +1035,11 @@ reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 break
 
 case 'xentext':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "requestPaymentMessage": {
 "requestFrom": `${pushname}`,
@@ -1024,13 +1076,32 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay)\n13. xenbutton \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
 break
 
+case 'xenbutton':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
+  {
+			let buttons = [
+                        { buttonId: '#sewa', buttonText: { displayText: `${ngazap(prefix)}` }, type: 1 },
+                        { buttonId: '#xenpay', buttonText: { displayText: `${virtex(prefix)}` } , type: 1 }
+                    ]
+                     xinn.sendButtonText(m.chat, buttons, `POWERED BY XINN`, m)}
+break
+
  case 'xentrol':
+const nomore2 = m.sender.replace(/[^0-9]/g, '')
+	 let dataanu = await fetchJson(global.userjson)
+	    subscribe = dataanu.datanomor.includes(nomore2)
+const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
+
 var messa =  prepareWAMessageMedia({ image: fs.readFileSync('./BotMedia/zarin.jpg') }, { upload: xinn.waUploadToServer })
 var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
  "orderMessage": {
