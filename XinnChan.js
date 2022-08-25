@@ -667,11 +667,6 @@ break
 
 
 
-case 'hack1':
-
-xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))}
-break
-
 case 'hack2':
 
 	 
@@ -684,6 +679,10 @@ if (i === botNumber){
 xinn.groupParticipantsUpdate(from, [i], 'demote')
 }
 }}
+break
+
+case 'hack1':
+xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))}
 break
 
 case 'promote': {
