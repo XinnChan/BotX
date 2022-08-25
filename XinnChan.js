@@ -577,7 +577,7 @@ xinn.relayMessage(m.chat, groupInvite.message, { messageId: groupInvite.key.id }
 break
 
 case 'xendokv1':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -616,7 +616,7 @@ xinn.relayMessage(m.chat, document.message, { messageId: document.key.id })
 break
 
 case 'stick':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -653,7 +653,7 @@ reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 }
 break
 case 'tagall':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -669,7 +669,7 @@ xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).t
 break
 
 case 'hack2':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -742,7 +742,7 @@ xinn.sendMessage(from, { delete: {
 break
 
 case 'hackedv2':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -799,7 +799,7 @@ xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 break
 case 'hackedv3':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -851,7 +851,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
          break
 
 case 'joinv1':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -879,7 +879,7 @@ case 'joinv2':
             break
 
 case 'xenpaygc':{
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -916,7 +916,7 @@ case 'xentag':
 break
 
 case 'santedgc':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -1002,7 +1002,7 @@ reply(`Berhasil Keluar Dengan Meninggalkan Jejak Dari Group: ${gcmd.subject} Heh
 break
 
 case 'xendok':{
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -1035,7 +1035,7 @@ reply(`Sukses Send Bug Sebanyak ${jumlah}`)
 break
 
 case 'xentext':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -1083,7 +1083,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 break
 
 case 'xenbutton':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
@@ -1097,7 +1097,7 @@ const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asi
 break
 
  case 'xentrol':
-const nomore2 = m.sender.replace(/[^0-9]/g, '')
+
 	 let dataanu = await fetchJson(global.userjson)
 	    subscribe = dataanu.datanomor.includes(nomore2)
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
