@@ -1069,8 +1069,9 @@ var troli = generateWAMessageFromContent(num, proto.Message.fromObject({
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troli.message, { messageId: troli.key.id })
-
+}
 reply(`Sukses`,)
+}
 break
 
 case 'xentrolv2gc': {
