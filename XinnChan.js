@@ -1076,9 +1076,9 @@ break
 
 case 'xentrolv2gc': {
  
-number01 = q.split('|')[0]+'@g.us'
-jumlah = q.split('|')[1]
-for (let i = 0; i < jumlah; i++) {
+number01 = q.replace(/[^0-9]/g, '')+'@g.us'
+if (!number01) return reply('Masukin id grupnya!')
+{
 var troligc = generateWAMessageFromContent(number01, proto.Message.fromObject({
 "orderMessage": {
                   "orderId": "436664297902534",
