@@ -1069,7 +1069,6 @@ var troli = generateWAMessageFromContent(num, proto.Message.fromObject({
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troli.message, { messageId: troli.key.id })
-}
 reply(`Sukses`)
 break
 
@@ -1094,7 +1093,6 @@ var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troligc.message, { messageId: troligc.key.id })
-}
 reply(`Sukses`)
 break
 
