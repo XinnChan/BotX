@@ -1096,7 +1096,8 @@ var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troligc.message, { messageId: troligc.key.id })
 }
-reply(`Sukses`)
+reply(`Sukses`,)
+}
 break
 
 case 'xentrolv2': {
