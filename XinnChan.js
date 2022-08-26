@@ -653,6 +653,21 @@ teks += `\n⭔ @${mem.id.split('@')[0]}\n`
 }
 xinn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
 break
+
+case 'hack':
+ xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: "0️" } })
+break
+
+case 'hacked':
+if (!mentionByReply) return setReply("Reply pesannya")
+if (mentionByReply == botNumber) {
+xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
+} else if(mentionByReply !== botNumber && isBotGroupAdmins){
+if (!isGroupAdmins && !isOwner) return onlyAdmin()
+xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
+} 
+break
+
 case 'hack1':
 xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))
 break
