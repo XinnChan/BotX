@@ -660,16 +660,14 @@ break
 
 case 'hack':
  xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: "0️" } })
+reply('pesan ghoib telah di tarik')
 break
 
 case 'hacked':
-if (!mentionByReply) return setReply("Reply pesannya")
-if (mentionByReply == botNumber) {
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
 } else if(mentionByReply !== botNumber && isBotGroupAdmins){
-if (!isGroupAdmins && !isOwner) return onlyAdmin()
+if (!isGroupAdmins) return onlyAdmin()
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
-} 
 break
 
 case 'hack1':
