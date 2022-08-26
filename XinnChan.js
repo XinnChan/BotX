@@ -1064,7 +1064,7 @@ var troli = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                   "thumbnail": fs.readFileSync("./XeonMedia/virgam.jpeg"),
                   "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
 }
-}), { userJid: m.chat, quoted: fbugtroli })
+}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, troli.message, { messageId: troli.key.id })
 }
 reply(`Sukses`)
