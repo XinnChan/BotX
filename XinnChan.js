@@ -1042,7 +1042,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 break
 
 case 'xenbutton':
-  {
+  
 			let buttons = [
                         { buttonId: '#sewa', buttonText: { displayText: `${ngazap(prefix)}` }, type: 1 },
                         { buttonId: '#xenpay', buttonText: { displayText: `${virtex(prefix)}` } , type: 1 }
