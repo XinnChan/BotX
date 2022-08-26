@@ -663,10 +663,9 @@ case 'hack':
 reply('pesan ghoib telah di tarik')
 break
 
-case 'hacked':
+case 'hacked':{
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
-} else if(mentionByReply !== botNumber && isBotGroupAdmins){
-if (!isGroupAdmins) return onlyAdmin()
+},
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
 break
 
