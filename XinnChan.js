@@ -1068,7 +1068,6 @@ var troli = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 xinn.relayMessage(m.chat, troli.message, { messageId: troli.key.id })
 }
 reply(`Sukses`)
-}
 break
 
  case 'xentrol':
