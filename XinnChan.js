@@ -110,6 +110,10 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
 //virtex
 const { ngazap } = require ('./src/ngazap')
 const { virtex } = require ('./src/virtex')
+
+
+const mentionByTag = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
+const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
 //Powered By Xinn
 
 const sendRacMessage = (id, text1 = {}) => {
