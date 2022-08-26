@@ -1062,14 +1062,15 @@ var troli = generateWAMessageFromContent(num, proto.Message.fromObject({
                   "itemCount": 9999999,
                   "status": "INQUIRY",
                   "surface": "CATALOG",
-                  "message": ` POWERED BY XINN ${ngazap(prefix)}`,
+                  "message": ` POWERED BY XINN🔥 ${ngazap(prefix)}`,
                   "orderTitle": "⏤͟͟͞͞ᵡPOWERED BY XINN༗",
                   "thumbnail": fs.readFileSync("./XeonMedia/virgam.jpeg"),
                   "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troli.message, { messageId: troli.key.id })
-reply(`Sukses`)
+}
+reply(`Sukses`,)
 break
 
 case 'xentrolv2gc': {
@@ -1086,13 +1087,14 @@ var troligc = generateWAMessageFromContent(num, proto.Message.fromObject({
                   "itemCount": 7777777,
                   "status": "INQUIRY",
                   "surface": "CATALOG",
-                  "message": `POWERED BY XINN ${ngazap(prefix)}`,
+                  "message": `POWERED BY XINN🔥 ${ngazap(prefix)}`,
                   "orderTitle": "⏤͟͟͞͞ᵡPOWERED BY XINN༗",
                   "thumbnail": fs.readFileSync("./XeonMedia/virgam.jpeg"),
                   "token": "AR6ew8v8oH4gt78Ufm/sMBCeaQJwJlDhOTto8qAZytAdQA=="
 }
 }), { userJid: m.chat, quoted: m })
 xinn.relayMessage(num, troligc.message, { messageId: troligc.key.id })
+}
 reply(`Sukses`)
 break
 
