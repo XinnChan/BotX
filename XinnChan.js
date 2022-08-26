@@ -779,7 +779,7 @@ xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 "isAnimated": false,
 }
 }), { userJid: m.chat, quoted: m })
-xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })}
+xinn.relayMessage(m.chat, sticker.message, { messageId: sticker.key.id })
 break
 case 'hackedv3':
 
