@@ -658,15 +658,11 @@ teks += `\n⭔ @${mem.id.split('@')[0]}\n`
 xinn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
 break
 
-case 'xen':
- xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: "0️" } })
-break
+case 'xenji':
+ xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: "0️" } })
 
-case 'xen1':
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
-break
 
-case 'xen2':
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
 break
 
