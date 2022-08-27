@@ -662,7 +662,7 @@ const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMe
 if (!mentionByReply) return reply("Reply pesannya")
 if (mentionByReply == botNumber) {
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
-} else if(mentionByReply !== botNumber && isnomore2){
+} else if(mentionByReply !== botNumber){
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
 }
 break
