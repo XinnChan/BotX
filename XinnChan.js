@@ -695,7 +695,7 @@ case 'z':
 break
 
 case 'x':
-  xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.id, participant: "0" } })
+  xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.id, participant: "0" } })
 break
 
 case 'kudetav1':
