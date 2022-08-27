@@ -113,8 +113,7 @@ const { virtex } = require ('./src/virtex')
 
 
 const mentionByTag = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
-const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
-//Powered By Xinn
+//POWERED BY XINN 
 
 const sendRacMessage = (id, text1 = {}) => {
 const reactionMessage = {react: {text: text1,key: m.key}}
@@ -658,11 +657,13 @@ teks += `\n⭔ @${mem.id.split('@')[0]}\n`
 xinn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
 break
 
-case 'xenji':
- xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: "0️" } })
-
+case 'hacked':
+const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
+if (!mentionByReply) return setReply("Reply pesannya")
+if (mentionByReply == botNumber) {
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
-
+} else if(mentionByReply !== botNumber && isBotGroupAdmins){
+if (!isGroupAdmins && !isOwner) return onlyAdmin()
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
 break
 
