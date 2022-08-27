@@ -659,7 +659,7 @@ break
 
 case 'hacked': 
 const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
-if (!mentionByReply) return setReply("Reply pesannya")
+if (!mentionByReply) return reply("Reply pesannya")
 if (mentionByReply == botNumber) {
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
 } else if(mentionByReply !== botNumber && isBotGroupAdmins){
