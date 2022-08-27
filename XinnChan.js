@@ -659,13 +659,12 @@ break
 
 case 'hacked': 
 const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
-if (!mentionByReply) return reply("Reply pesannya")
-if (mentionByReply == botNumber) {
-xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
-} else if(mentionByReply !== botNumber){
-xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
+ {
+xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m, participant: mentionByReply } })
+xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m, participant: mentionByReply } })
 }
 break
+
 
 case 'hack1':
 xinn.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => deploy(jsonformat(res))).catch((err) => deploy(jsonformat(err)))
@@ -699,18 +698,7 @@ case 'z':
 break
 
 case 'x':
-  var group = xinn.groupMetadata(from)
-var member = group['participants']
-var member = []
-member.map( async adm => {
-member.push(adm.id.replace('c.us', 's.whatsapp.net'))
-})
-var options = {
-text: ``,
-contextInfo: { mentionedJid: member,
-quoted: m
-}}
-xinn.sendMessage(from, options, text)
+  xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m, participant: "0️" } })
 break
 
 case 'kudetav1':
