@@ -666,7 +666,7 @@ case 'xen1':
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: true, id: m, participant: mentionByReply } })
 break
 
-case 'xen2`:
+case 'xen2':
 xinn.sendMessage(from, { delete: { remoteJid: from, fromMe: false, id: m, participant: mentionByReply } })
 break
 
