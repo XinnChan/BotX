@@ -658,11 +658,8 @@ xinn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, 
 break
 
 case 'hacked': 
-const mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
- {
+var mentionByReply = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
 xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m, participant: mentionByReply } })
-xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m, participant: mentionByReply } })
-}
 break
 
 
@@ -698,7 +695,7 @@ case 'z':
 break
 
 case 'x':
-  xinn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m, participant: "0️" } })
+  xinn.sendMessage(m.chat, { delete: { remoteJid: from, fromMe: false, id: m, participant: "0️" } })
 break
 
 case 'kudetav1':
