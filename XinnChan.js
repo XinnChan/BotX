@@ -885,6 +885,13 @@ case 'xentag':
                     })
 break
 
+case 'ken': {
+
+		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		 xinn.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+	}
+	break
+
 case 'santedgc':
 
 const seranggc1 = async(teks) => {await xinn.sendMessage(teks, {text: 'Loh ini kalian wanya pada kenapa?'}, {quoted: {key: {fromMe: true, participant: `0@s.whatsapp.net`, ...({remoteJid: ""})}, message: {conversation: 'Powered By Xinn'}}})}
@@ -1034,7 +1041,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 "noteMessage": {
 "extendedTextMessage": {
 "requestFrom":`${pushname}`,
-"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay)\n13. xenbutton\n14. xentrolv2\n15. xentrolv2pc (masukkan nomor target sama jumlah)\n16. xentrolv2gc (masukkan id gc) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)`,
+"text": `*[ Bugmenu©️ ]*\n\n1. xenbugv (spam Xenpay)\n2. xenpay\n3. xenpaygc (masukin id grup)\n4. santedgc (masukin id grup)\n5. santed (masukin nomor dan pilih durasi)\n6. xentag (bug Jid)\n7. xendok (bug dokumen)\n8. xendokv1 (documen)\n9. stick (masukin jumlah)\n10. p (bug invit)\n11. xentext (virtex pay)\n12. xentrol (4 troli delay)\n13. xenbutton\n14. xentrolv2\n15. xentrolv2pc (masukkan nomor target sama jumlah)\n16. xentrolv2gc (masukkan id gc) \n\n *[ MENU TAMBAHAN®️ ]*\n1. joinv1 (Masukin link Gc atau id)\n2. joinv2 (Masukin link Gc atau id)\n3. left (masukin id gc)\n4. hackedv1 (semua pesan yang di reply akan di tarik)\n5. hackedv2 (3 stick)\n6. hackedv3\n7. hack1 (despearing)\n8. hack2 (demoteall)\n9. promote\n10. z (hidetag)\n11. kudetav1 (kick all anti ban)\n12. kudetav2 (kick all rawan ban)\n13. tagall\n14. x (hidetag v2)\n15. ken (fake add)`,
 }
 }}}), { userJid: m.chat, quoted: m })
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
