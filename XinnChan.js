@@ -1057,7 +1057,6 @@ thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg',
 thumbnail: kalimage,
 }
 }}}}}, { quoted:m})
-}
 break
 
 case 'bugmenu':
