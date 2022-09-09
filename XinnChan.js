@@ -1032,7 +1032,7 @@ var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.f
 xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
 break
 
-case 'amarahxen'
+case 'amarahxen':
 const doc = { 
 key: {
 fromMe: false, 
