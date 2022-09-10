@@ -1057,6 +1057,7 @@ thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg',
 thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 }
 }}}}}, { quoted: doc795 })
+reply(`Siap laksanakan tuan Xinn 🥺🙏`,)
 break
 
 case 'bugmenu':
