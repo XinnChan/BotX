@@ -1033,7 +1033,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 break
 
 case 'amarahxen':
-const doc = { 
+const docu = { 
 key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {}) 
@@ -1056,7 +1056,7 @@ sourceUrl: `https://youtube.com/c/Xinnchan_795`,
 thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg', 
 thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 }
-}}}}}, { quoted:m})
+}}}}}, { quoted:docu})
 break
 
 case 'bugmenu':
