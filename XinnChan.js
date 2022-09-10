@@ -1054,7 +1054,7 @@ mimetype: 'audio/mpeg', caption: `${nomore2}`,
 showAdAttribution: true,
 sourceUrl: `https://youtube.com/c/Xinnchan_795`,
 thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg', 
-thumbnail: kalimage,
+thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 }
 }}}}}, { quoted:m})
 break
