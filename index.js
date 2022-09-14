@@ -57,7 +57,7 @@ async function connectKeWA() {
     const xinn = XinnConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['Follow IG @xinnchan_795','Safari','1.0.0'],
         auth: state
     })
 
