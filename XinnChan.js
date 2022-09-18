@@ -480,9 +480,9 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 										"rowId": `${prefix}aboutdev`
 									},
 									{
-										"title": "Spam Xenpay",
+										"title": "Xentag",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xenbugv`
+										"rowId": `${prefix}xentag`
 									},
 									{
 										"title": "Xenpay",
@@ -490,9 +490,9 @@ _🏴‍☠️PLATFORM : ${os.platform()}_`,
 										"rowId": `${prefix}xenpay`
 									},
 									{
-										"title": "Xentag",
+										"title": "Xatux",
 										"description": "WA CRASH JANGAN SALAHIN BOT ATAU YANG BUAT",
-										"rowId": `${prefix}xentag`
+										"rowId": `${prefix}xatux`
 									},
 									{
 										"title": "BUG MENU",
