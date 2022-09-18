@@ -1074,7 +1074,7 @@ break
 
 case 'xatuxv2':
 let  reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
-xinn.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net",(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+xinn.relayMessage(m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net", { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" }
 break
 
 case 'bugmenu':
