@@ -1069,24 +1069,24 @@ case 'xatuxv1':
 try{
 let reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
 if (mentionByReply && parseInt(args[0])) {
-Reply("Sending...")
+await setReply("Sending...")
 for (let i = 0; i < parseInt(args[0]); i++) {
-xinn.relayMessage(mentionByReply, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+xinn.relayMessage(mentionByReply, { reactionMessage }, { messageId: "🥺🙏" })
 }
 } else if(mentionByTag[0] && isGroup && parseInt(args[1])) { 
-reply("Sending...")
+await setReply("Sending...")
 for (let i = 0; i < parseInt(args[1]); i++) {
-xinn.relayMessage(mentionByTag[0], { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+xinn.relayMessage(mentionByTag[0], { reactionMessage }, { messageId: "🥺🙏" })
 }
 } else if(!mentionByReply && !mentionByTag[0] && args[0] && parseInt(args[1])) { 
-reply("Sending...")
+await setReply("Sending...")
 for (let i = 0; i < parseInt(args[1]); i++) {
-xinn.relayMessage(args[0]+'@s.whatsapp.net', { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+xinn.relayMessage(args[0]+'@s.whatsapp.net', { reactionMessage }, { messageId: "🥺🙏" })
 }
 }
 } catch (err){
 console.log(err)
-reply("Gagal mengirim bug, Terjadi Error")
+setReply("Gagal mengirim bug, Terjadi Error")
 }
 break
 
