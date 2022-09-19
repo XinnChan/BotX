@@ -113,11 +113,10 @@ const { virtex } = require ('./src/virtex')
 
 
 const mentionByTag = type == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
-//POWERED BY XINN 
+//BUG POWERED BY XINN 
 
-const sendRacMessage = (id, text1 = {}) => {
-const reactionMessage = {react: {text: text1,key: m.key}}
-xinn.sendMessage(id, reactionMessage)}
+const  reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
+
 
 //bug nya
 	const virus =  {
@@ -1060,10 +1059,10 @@ thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 reply(`Siap laksanakan tuan Xinn 🥺🙏`,)
 break
 
-case 'xatux':
+/*case 'xatux':
  let  reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
-break
+break*/
 
 
 case 'bugmenu':
