@@ -1063,6 +1063,11 @@ case 'xatux':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
+case 'xatuxv1':
+
+Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
+a = xinn.relayMessage(from, { reactionMessage }, { messageId: "SIAP LAKSANAKAN TUAN XINN🥺🙏" })
+break
 
 case 'bugmenu':
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
