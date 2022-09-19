@@ -1065,8 +1065,8 @@ break
 
 case 'xatuxv1':
 
-Pe = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,'')+"@s.whatsapp.net"
-a = xinn.relayMessage(from, { reactionMessage }, { messageId: "SIAP LAKSANAKAN TUAN XINN🥺🙏" })
+var numberQuery = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
+xinn.relayMessage(numberQuery, { reactionMessage }, { messageId: "SIAP LAKSANAKAN TUAN XINN🥺🙏" })
 break
 
 case 'bugmenu':
