@@ -1065,12 +1065,6 @@ case 'xatux':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
-case 'xatuxv1':
-num01 = q.split('|')[0]+'@s.whatsapp.net' {
-let  reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
-xinn.relayMessage(num01, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
-}
-break
 
 case 'bugmenu':
 var requestPaymentMessage = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
