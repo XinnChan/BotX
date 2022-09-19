@@ -695,8 +695,7 @@ case 'z':
 break
 
 case 'x':
-  let  reactionMessage2 = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
-xinn.relayMessage(from, { reactionMessage2 }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
 case 'kudetav1':
