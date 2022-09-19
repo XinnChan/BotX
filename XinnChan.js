@@ -428,7 +428,7 @@ _🌐GRUB TOTAL : 4
 -Private Team WhatsApp Moders TXS_
 _📌PIN CHAT : 2
 -Xinyan
--Minyan_
+-
 _🔋BATERAI : Tidak di Carge_
 _🌠TOTAL CHAT :[ 2 ]_
 _𓃲RUNTIME : ${runtime(process.uptime())}_
