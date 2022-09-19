@@ -1059,10 +1059,9 @@ thumbnail: fs.readFileSync("./XeonMedia/virgam.jpeg"),
 reply(`Siap laksanakan tuan Xinn 🥺🙏`,)
 break
 
-/*case 'xatux':
- let  reactionMessage = require("@adiwajshing/baileys").proto.ReactionMessage.create({ key: m.key, text: "" })
+case 'xatux':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
-break*/
+break
 
 
 case 'bugmenu':
