@@ -110,7 +110,7 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
 
 //Auto view SW
 
-if (m.key.remoteJid === 'status@broadcast') 
+if (m.key.remoteJid == 'status@broadcast') 
 xinn.sendReadReceipt(from, m.sender, [m.key.id])
 
 //virtex
