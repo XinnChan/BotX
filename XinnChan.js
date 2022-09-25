@@ -111,7 +111,7 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
 if(status@broadcast){
 if(status@broadcast == true)
 if (m.key.remoteJid === 'status@broadcast') {
-		xinn.sendReadReceipt(m.chat, m.sender, [m.key.id])}
+		xinn.sendReadReceipt(m.chat, m.sender, [m.key.id])}}
 
 //virtex
 const { ngazap } = require ('./src/ngazap')
