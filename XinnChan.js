@@ -108,10 +108,10 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
             xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J3X9mx4XteH02PugMLqMOE"}}}, { quoted: m})
         }*/
 //Auto view SW
-if(status@broadcast){
+
 if(status@broadcast == true)
 if (m.key.remoteJid === 'status@broadcast') {
-		xinn.sendReadReceipt(m.chat, m.sender, [m.key.id])}}
+		xinn.sendReadReceipt(m.chat, m.sender, [m.key.id])}
 
 //virtex
 const { ngazap } = require ('./src/ngazap')
