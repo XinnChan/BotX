@@ -699,7 +699,7 @@ case 'z':
  xinn.sendMessage(m.chat, { text : `Tolong Baca Tag Pesan!!!`, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
-case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan': case '🗿': case '🙂': case '😱':
+case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan': case '🗿': case '🙂': case '😱': case '🤔': case '🥲': case 'kenapa': case 'wa':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
