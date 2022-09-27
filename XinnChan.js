@@ -699,8 +699,8 @@ case 'z':
  xinn.sendMessage(m.chat, { text : `Tolong Baca Tag Pesan!!!`, extendedTextMessage : '' , mentions: participants.map(a => a.id)}, { quoted: m })
 break
 
-case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan': case '🗿': case '🙂': case '😱': case '🤔': case '🥲': case 'kenapa': case 'wa': case 'test': case 'tes': case 'tess': case 'ping': case '>>': case '🤣🤣': case '
-😂😂': case '/menu': case 'anj': case 'ajg': case 'anjng': case 'anjing': case 'cringe': case 'krinj': case 'ajc': case 'kntl': case 'udah': case 'lahh':
+case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan': case '🗿': case '🙂': case '😱': case '🤔': case '🥲': case 'kenapa': case 'wa': case 'test': case 'tes': case 'tess': case 'ping': case '>>': case '🤣🤣':
+case '😂😂': case '/menu': case 'anj': case 'ajg': case 'anjng': case 'anjing': case 'cringe': case 'krinj': case 'ajc': case 'kntl': case 'udah': case 'lahh':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
