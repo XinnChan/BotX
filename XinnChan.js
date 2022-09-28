@@ -702,15 +702,19 @@ break
 
 
 
-case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan': case '🗿': case '🙂': case '😱': case '🤔': case '🥲':
+case 'x': case '.': case ',': case 'oi': case '/': case '#': case 'woi': case 'sok': case 'bacod': case 'banh': case 'Pp': case 'asw': case 'apaan':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
-case 'ping': case '>>': case '🤣🤣': case '😂😂': case '/menu': case 'anj': case 'ajg': case 'anjng': case 'anjing': case 'cringe': case 'krinj': case 'ajc': case 'kntl': case 'udah': case 'lahh':
+case 'ping': case '>>': case '/menu': case 'anj': case 'ajg': case 'anjng': case 'anjing': case 'cringe': case 'krinj': case 'ajc': case 'kntl': case 'udah': case 'lahh':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
 case 'tes': case 'tess': case 'kenapa': case 'wa': case 'test':
+xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
+break
+
+case '🤣🤣': case '😂😂': case '🗿': case '🙂': case '😱': case '🤔': case '🥲':
 xinn.relayMessage(from, { reactionMessage }, { messageId: "AMPUN TUAN XINN🥺🙏" })
 break
 
