@@ -309,7 +309,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 	
-	case 'command': case '/>menu': {
+	case 'command': case 'cmd': {
 	
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
 	timestampe = speed();
