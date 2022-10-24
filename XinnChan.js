@@ -235,7 +235,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Hi ${pushname}`,
                     description: `Pilih Durasi Penyerangan\n`,
                     buttonText: "CLICK ME",
-                    footerText: `${global.footer}\n${tanggal}`,
+                    footerText: `POWERED BY XINN KENJI😎👌`,
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "SILAHKAN PILIH DURASI PENYERANGAN",
@@ -287,7 +287,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 	
-	case 'command': case 'cmd': {
+	case 'command': case 'cmd': case 'listmenu': {
 	
 const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
 	timestampe = speed();
