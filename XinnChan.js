@@ -108,10 +108,6 @@ module.exports = xinn = async (xinn, m, chatUpdate, store) => {
             xinn.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./BotMedia/zarin.jpg`),"sourceUrl": "https://chat.whatsapp.com/J3X9mx4XteH02PugMLqMOE"}}}, { quoted: m})
         }*/
 
-//Auto view SW
-
-if (m.key.remoteJid == 'status@broadcast') 
-xinn.sendReadReceipt(from, m.sender, [m.key.id])
 
 //virtex
 const { ngazap } = require ('./src/ngazap')
@@ -231,25 +227,7 @@ break
 
 	case 'santed': case 'atk': case 'serang': case 'santet': {
 		const nomore2 = m.sender.replace(/[^0-9]/g, '')
-	 alldata = await fetchJson(global.userjson)
-	    subscribe = alldata.datanomor.includes(nomore2)
-const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
-
-		
-		if (!subscribe) {
-			let buttons = [
-                        { buttonId: '#sewa', buttonText: { displayText: 'SEWA BOT' }, type: 1 },
-                        { buttonId: '#owner', buttonText: { displayText: 'CONTACT OWNER' }, type: 1 }
-                    ]
-                     xinn.sendButtonText(m.chat, buttons, `Maaf Anda belum bisa mengakses fitur ini\n Anda harus berlangganan Sewa BOT agar dapat menggunakan Fitur ini`, `Ketik ${prefix}sewa\n untuk melihat harga sewa BOT, \nketik ${prefix}owner\nuntuk melihat nomor owner`, m)
-} else if (!text) { throw `*Masukan Nomor WhatsApp Target !*\n_Contoh:_\n${prefix + command} 6282143067466`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6285725833708')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else {
+	 {
 		
 	
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -264,7 +242,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"rows": [
 								   {
 										"title": "1 Menit",
-										"description": `Santed ${nomore3} dalam waktu 1 menit`,
+										"description": `Santed ${nomore3} dalam waktu 1 menit (Fitur ini bebas di gunakan siapa saja/free)`,
 										"rowId": `${prefix}santed1menit ${nomore3}`
 									},
 									{
@@ -1595,24 +1573,7 @@ break
    case 'santed1menit': {
 
    	const nomore2 = m.sender.replace(/[^0-9]/g, '')
-	 let dataanu = await fetchJson(global.userjson)
-	    subscribe = dataanu.datanomor.includes(nomore2)
-const tanggal = moment.tz('Asia/Jakarta').format('dddd') + ', ' + moment.tz('Asia/Jakarta').format('LL')
-
-		
-		if (!subscribe) {
-			let buttons = [
-                        { buttonId: '#sewa', buttonText: { displayText: 'SEWA BOT' }, type: 1 },
-                        { buttonId: '#owner', buttonText: { displayText: 'CONTACT OWNER' }, type: 1 }
-                    ]
-                     xinn.sendButtonText(m.chat, buttons, `Maaf Anda belum bisa mengakses fitur ini\n Anda harus berlangganan Sewa BOT agar dapat menggunakan Fitur ini`, `Ketik ${prefix}sewa\n untuk melihat harga sewa BOT, \nketik ${prefix}owner\nuntuk melihat nomor owner`, m)
-} else if (!text) { throw `*Masukan Nomor WhatsApp Target !*\n_Contoh:_\n${prefix + command} 6282143067466`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else if (nomore3.includes('6282143067466')) { throw `*ITU NOMOR OWNER BOT 😡😈🖕*`
-} else {
+	 {
 	reply(`*〔 Berhasil Mengeksekusi Target 〕*
 
 *⭔ Nomor :* ${nomore3}
